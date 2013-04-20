@@ -87,6 +87,8 @@ body{
   width:266px;
 }
 
+.log-in a span{font-size: 12px;}
+
 .bottom-links{
   background-color:rgba(255,255,255,0.07);
   -weblit-box-shadow:0px 0px 0px 4px rgba(255,255,255,0.07);
@@ -108,16 +110,20 @@ body{
 
 
 
-  .btn{
+  .btn,
+  .ui-btn{
+    color:#FFF;
     -weblit-box-shadow:0px 0px 0px 4px rgba(255,255,255,0.15);
     -moz-box-shadow:0px 0px 0px 4px rgba(255,255,255,0.15);
     box-shadow:0px 0px 0px 4px rgba(255,255,255,0.15);
     border-radius:3px;
     margin:0 auto 18px;
+ 
     width:83%;
   }
 
-  .btn.red{
+  .btn.red,
+  [data-theme="red"]{
     background: #e04b40; /* Old browsers */
     background: -moz-linear-gradient(top,  #e04b40 0%, #d6463c 100%); /* FF3.6+ */
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e04b40), color-stop(100%,#d6463c)); /* Chrome,Safari4+ */
