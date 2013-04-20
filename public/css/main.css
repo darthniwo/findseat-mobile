@@ -121,8 +121,12 @@ body{
   width:25px;
 }
 
+/* ICONPOS TWEAKS*/
 .ui-icon-bottom .ui-icon{margin-left:-12px;}
 
+/*ICON CLASSNAMES*/
+
+.ui-icon-reload{background-position: 0px 0px;}
 
 
 
