@@ -65,12 +65,37 @@ textarea {
    Author's custom styles
    ========================================================================== */
 body{
-    background:#000 url('../img/backgrounds/body.jpg') no-repeat 0px -25px !important;
+  background:#000 url('../img/backgrounds/body.jpg') no-repeat 0px -25px !important;
+  font-family: 'Open Sans', sans-serif;
 }
+
+/* Login - signup page*/
+
 .ui-page { -webkit-backface-visibility: hidden; } 
 #log-image{
-    margin-top:60px;
-    text-align: center;
+  margin:60px 0  90px 0;
+  text-align: center;
+}
+
+.log-in a{
+  color:#FFF;
+  display:block;
+  font-size: 12px;
+  margin:0 auto 18px;
+  text-align: center;
+  text-decoration: none;
+  width:266px;
+}
+
+.bottom-links{
+  background-color:rgba(255,255,255,0.07);
+  -weblit-box-shadow:0px 0px 0px 4px rgba(255,255,255,0.07);
+  -moz-box-shadow:0px 0px 0px 4px rgba(255,255,255,0.07);
+  box-shadow:0px 0px 0px 4px rgba(255,255,255,0.07);
+  border-radius:3px;
+  margin:0 auto 18px;
+  height:46px;
+  width:90%;
 }
 
 
@@ -81,14 +106,26 @@ body{
     Buttons
  ========================================================================== */
 
-  .log-in a{
-    color:#FFF;
-    display:block;
-    font-size: 12px;
+
+
+  .btn{
+    -weblit-box-shadow:0px 0px 0px 4px rgba(255,255,255,0.15);
+    -moz-box-shadow:0px 0px 0px 4px rgba(255,255,255,0.15);
+    box-shadow:0px 0px 0px 4px rgba(255,255,255,0.15);
+    border-radius:3px;
     margin:0 auto 18px;
-    text-align: center;
-    text-decoration: none;
-    width:266px;
+    width:83%;
+  }
+
+  .btn.red{
+    background: #e04b40; /* Old browsers */
+    background: -moz-linear-gradient(top,  #e04b40 0%, #d6463c 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e04b40), color-stop(100%,#d6463c)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #e04b40 0%,#d6463c 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #e04b40 0%,#d6463c 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #e04b40 0%,#d6463c 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #e04b40 0%,#d6463c 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e04b40', endColorstr='#d6463c',GradientType=0 ); /* IE6-9 */
   }
 
 
@@ -105,7 +142,7 @@ body{
     box-shadow:0px 0px 0px 4px rgba(255,255,255,0.15);
     border-radius:3px;
     height: 46px;
-    margin:0 auto 15px;
+    margin:0 auto 18px;
     width:83%;
  }
 
