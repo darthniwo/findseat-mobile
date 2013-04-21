@@ -74,9 +74,9 @@
         </div>
       </div>  end page -->
 
-      <div data-role="page" id="oldlogin">
+      <div data-role="page" id="signup">
        <div data-role="header">
-         <a href="index.html" class="ui-btn-right" data-theme="transparent" data-icon="reload" data-iconpos="notext" data-transition="flip" data-inline="true">back</a>
+         <a href="oldlogin.html" class="ui-btn-left" data-theme="transparent" data-icon="back-arrow" data-iconpos="notext" data-transition="flip" data-inline="true">back</a>
        </div>
        <div data-role="content">
           <h1 class="log-image">
@@ -86,6 +86,10 @@
           <div class="signup-form">
             <form action="">
               <div class="text-field clearfix">
+                <span class="left ui-icon ui-icon-user"></span>
+                <input type="text" class="left" placeholder="Nombre">
+              </div>
+              <div class="text-field clearfix">
                 <span class="left ui-icon ui-icon-mail"></span>
                 <input type="email" class="left" placeholder="Mail">
               </div>
@@ -93,16 +97,16 @@
                 <span class="left ui-icon ui-icon-key"></span>
                 <input type="password" class="left" placeholder="Password">
               </div>
+              <div class="text-field clearfix">
+                <span class="left ui-icon ui-icon-retype"></span>
+                <input type="password" class="left" placeholder="Confirmar Password">
+              </div>
               <input type="submit" value="conectarse" class="btn red" data-theme="red">
             </form>
           </div>
        </div>
        <div data-role="footer">
-         <div class="bottom-links">
-            <a href="javascript:;">Olvidaste la contraseña</a>
-            <span>/</span>
-            <a href="signup.html" data-transition="flip">Deseas registrarte?</a>
-          </div>
+         
        </div>
 
       </div>  <!--end page -->

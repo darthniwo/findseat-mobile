@@ -124,18 +124,24 @@ body{
 /* ICONPOS TWEAKS*/
 .ui-icon-bottom .ui-icon{margin-left:-12px;}
 .text-field .ui-icon-mail,
-.text-field .ui-icon-key{
+.text-field .ui-icon-key,
+.text-field .ui-icon-retype,
+.text-field .ui-icon-user{
   margin:11px 12px 0px 10px;
   border-right:solid #DDD 1px;
 }
 
 /*ICON CLASSNAMES*/
 .ui-icon-reload{background-position: 0px 0px;}
+.ui-icon-back-arrow{background-position: -42px -5px;}
 .ui-icon-mail{background-position: 0px -92px;}
 .text-field .ui-icon-mail{background-position: -3px -92px;}
 .ui-icon-key{background-position: 0px -125px;}
 .text-field .ui-icon-key{background-position: -3px -125px;}
-
+.ui-icon-user{background-position: -3px -165px;}
+.text-field .ui-icon-user{background-position: -3px -160px;}
+.ui-icon-retype{background-position: -2px -193px;}
+.text-field .ui-icon-retype{background-position: -2px -188px;}
 
 
 
@@ -201,7 +207,9 @@ body{
     width:83%;
   }
 
-  .text-field input[type="text"]{width:80% !important;}
+  .text-field input[type="text"],
+  .text-field input[type="password"],
+  .text-field input[type="email"]{width:80% !important;}
 
 
 
