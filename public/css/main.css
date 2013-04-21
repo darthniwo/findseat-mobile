@@ -143,6 +143,11 @@ body{
 /* ==========================================================================
     Buttons
  ========================================================================== */
+  .ui-header a.ui-btn{
+    height:27px;
+    width:27px;
+  }
+
   .transparent,
   [data-theme="transparent"]{
     -weblit-box-shadow:none !important;

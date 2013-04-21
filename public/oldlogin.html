@@ -53,29 +53,66 @@
     <script src="js/vendor/modernizr-2.6.2.min.js"></script>
   </head>
   <body>
-      <!-- Add your site or application content here -->
-      <div data-role="page">
-        <h1 id="log-image">
-          <img src="img/logo.png">
-        </h1>
-        
-        <div class="signup-form">
-          <form action="">
-            <input type="text">
-            <input type="text">
-            <input type="submit" value="conectarse">
-          </form>
+      <!-- Add your site or application content here 
+      <div data-role="page" id="login-splash">
+        <div data-role="content">
+          <h1 class="log-image">
+            <img src="img/logo.png">
+          </h1>
+          
+          <div class="log-in">
+            <a href=""><img src="img/misc/fb-connect.png" alt=""></a>
+            <a href=""><img src="img/misc/twt-connect.png" alt=""></a>
+            <a href="#oldlogin" data-role="button" data-theme="transparent" data-icon="reload" data-iconpos="bottom" data-transition="flip" data-inline="true">Conectarse de la forma antigua</a>
+          </div>
         </div>
 
+        <div data-role="footer">
+          <div class="bottom-links">
+            <a href="javascript:;">Terminos y Condiciones</a>
+          </div>
+        </div>
+      </div>  end page -->
 
+      <div data-role="page" id="oldlogin">
+       <div data-role="header">
+         <a href="#login-splash" data-theme="transparent" data-icon="reload" data-iconpos="notext" data-transition="flip" data-inline="true">back</a>
+       </div>
+       <div data-role="content">
+          <h1 class="log-image">
+            <img src="img/logo.png">
+          </h1>
+          
+          <div class="signup-form">
+            <form action="">
+              <div class="text-field clearfix">
+                <span class="left ui-icon ui-icon-mail"></span>
+                <input type="text" class="left" placeholder="Mail">
+              </div>
+              <div class="text-field clearfix">
+                <span class="left ui-icon ui-icon-key"></span>
+                <input type="text" class="left" placeholder="Password">
+              </div>
+              <input type="submit" value="conectarse" class="btn red" data-theme="red">
+            </form>
+          </div>
+       </div>
+       <div data-role="footer">
+         <div class="bottom-links">
+            <a href="javascript:;">Olvidaste la contraseña</a>
+            <span>/</span>
+            <a href="javascript:;">Deseas registrarte?</a>
+          </div>
+       </div>
 
       </div>  <!--end page -->
       
       <!-- jQuery mobile -->
       <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-      <script src="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.js"></script>
+      <script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
 
       <!--<script src="js/vendor/zepto.min.js"></script>-->
+      <script src="js/vendor/retina.js"></script>
       <script src="js/helper.js"></script>
 
       <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
