@@ -123,10 +123,20 @@ body{
 
 /* ICONPOS TWEAKS*/
 .ui-icon-bottom .ui-icon{margin-left:-12px;}
+.text-field .ui-icon-mail,
+.text-field .ui-icon-key{
+  margin:11px 12px 0px 10px;
+  border-right:solid #DDD 1px;
+}
 
 /*ICON CLASSNAMES*/
-
 .ui-icon-reload{background-position: 0px 0px;}
+.ui-icon-mail{background-position: 0px -92px;}
+.text-field .ui-icon-mail{background-position: -3px -92px;}
+.ui-icon-key{background-position: 0px -125px;}
+.text-field .ui-icon-key{background-position: -3px -125px;}
+
+
 
 
 
@@ -170,8 +180,12 @@ body{
 /* ==========================================================================
     Form elements
  ========================================================================== */
-
- .text-field{
+  div.ui-input-text{margin:6px 0;}
+  .ui-submit .ui-btn-text{
+    color:#FFF;
+    font-size: 17px;
+  }
+  .text-field{
     background-color:#FFF;
     -weblit-box-shadow:0px 0px 0px 4px rgba(255,255,255,0.15);
     -moz-box-shadow:0px 0px 0px 4px rgba(255,255,255,0.15);
@@ -180,7 +194,9 @@ body{
     height: 46px;
     margin:0 auto 18px;
     width:83%;
- }
+  }
+
+  .text-field input[type="text"]{width:80% !important;}
 
 
 
@@ -302,6 +318,12 @@ textarea[contenteditable] {
 .clearfix {
     *zoom: 1;
 }
+
+.left{float:left;}
+.right{float:right;}
+.clear{clear:left;}}
+.clearall{clear:both;}
+
 
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
