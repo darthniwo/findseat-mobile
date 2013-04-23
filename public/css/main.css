@@ -108,14 +108,27 @@ body{
   color: #FFF;
 }
 
+#dashboard{background-color: #F1F1F4;}
+
 ul.ui-listview li{
+  background-color: #F1F1F4;
   height:170px;
 }
 
 ul.ui-listview li a.ui-link-inherit{
-  padding:0 10px 0 110px !important;
+  padding:0 10px 0 108px !important;
   text-decoration: none;
 }
+
+ul.ui-listview li,
+ul.ui-listview li span,
+ul.ui-listview li a{
+  color:#7F7F7F;
+  font-size: 12px;
+  text-shadow:0px 1px #FFF;
+}
+
+ul.ui-listview li span{font-weight: bold;}
 
 .ui-li-thumb{
   left:-5px;
@@ -126,7 +139,7 @@ ul.ui-listview li a.ui-link-inherit{
 .ui-li-heading{
   color:#828282;
   font-size: 20px;
-  text-shadow:0px 1px #FFF;
+  
   margin-top:0;
   overflow: visible;
   white-space: normal !important;
