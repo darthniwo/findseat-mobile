@@ -150,6 +150,8 @@ li .ui-icon-custom{
   background-size: cover;
   height:12px;
   width:8px;
+  top:10% !important;
+  right:-10px !important;
 }
 
 /* ICONPOS TWEAKS*/
