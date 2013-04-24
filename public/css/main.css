@@ -110,6 +110,28 @@ body{
 
 #dashboard{background-color: #F1F1F4;}
 
+ul.tabs{
+  list-style-type: none;
+}
+
+ul.tabs li.active{
+  background-color: #F1F1F4;
+}
+
+ul.tabs li{
+  background-color: #B1B1B1;
+}
+
+ul.tabs li a{
+  color:#B1B1B1;
+  font-size: 22px;
+  text-shadow:0px 1px #FFF;
+}
+
+ul.tabs li.active a{
+  color:#29313D;
+}
+
 ul.ui-listview li{
   background-color: #F1F1F4;
   height:170px;
@@ -129,6 +151,8 @@ ul.ui-listview li a{
 }
 
 ul.ui-listview li span{font-weight: bold;}
+ul.ui-listview li span.genre{font-weight: normal;}
+ul.ui-listview li span.genre b{font-weight: bold;}
 
 .ui-li-thumb{
   left:-5px;
