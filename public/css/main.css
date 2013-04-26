@@ -116,10 +116,14 @@ ul.tabs{
 
 ul.tabs li.active{
   background-color: #F1F1F4;
+  border-left:0 none;
+  border-bottom:0 none;
 }
 
 ul.tabs li{
   background-color: #CCC;
+  border-left: solid #FFF 1px;
+  border-bottom: solid #FFF 1px;
 }
 
 ul.tabs li a,
@@ -167,7 +171,15 @@ ul.ui-listview li a{
 }
 
 ul.ui-listview li span{font-weight: bold;}
-ul.ui-listview li span.genre{font-weight: normal;}
+ul.ui-listview li span.genre{
+  background:url('../img/misc/ribbon@2x.png') no-repeat top left;
+  background-size: 100% 100%;
+  color:#FFF;
+  display:inline-block;
+  font-weight: normal;
+  text-shadow:0px 1px rgba(0,0,0,0.15);
+  padding:3px 20px 6px 5px;
+}
 ul.ui-listview li span.genre b{font-weight: bold;}
 
 .ui-li-thumb{
@@ -180,7 +192,7 @@ ul.ui-listview li span.genre b{font-weight: bold;}
   color:#828282;
   font-size: 20px;
   
-  margin-top:0;
+  margin:0 0 5px 0;
   overflow: visible;
   white-space: normal !important;
 }
@@ -206,6 +218,8 @@ ul.ui-listview li span.genre b{font-weight: bold;}
   font-size: 11px;
   font-weight: bold;
 }
+
+
 
 /* ==========================================================================
     Icons
