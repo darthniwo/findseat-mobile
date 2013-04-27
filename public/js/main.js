@@ -30,8 +30,8 @@ $(function(){
 			el.addEventListener("touchmove", function(e) {
 			  e.preventDefault();
 			  var diffX = (e.changedTouches[0].pageX - offsetX) - startX;
-			  $(this).css("-webkit-transform", "translate3d("+diffX+"px, 0, 0)");
-			  console.log('touchmove');
+			  // $(this).css("-webkit-transform", "translate3d("+diffX+"px, 0, 0)");
+			  // console.log('touchmove');
 			}, false);
 			el.addEventListener("touchend", function(e) {
 			  e.preventDefault();

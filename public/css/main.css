@@ -211,11 +211,17 @@ ul.ui-listview li span.genre b{font-weight: bold;}
   background: -ms-linear-gradient(top,  #29313d 0%,#303949 100%); /* IE10+ */
   background: linear-gradient(to bottom,  #29313d 0%,#303949 100%); /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#29313d', endColorstr='#303949',GradientType=0 ); /* IE6-9 */
-
 }
 
+.ui-navbar.main-navbar li{
+ /* border-right: 1px solid rgba(255, 255, 255, 0.16);*/
+  box-shadow: 1px 0px rgba(255,255,255,0.06);
+}
+
+.ui-navbar.main-navbar li:last-child{box-shadow:none;}
+
 .ui-navbar.main-navbar .ui-btn-text{
-  font-size: 11px;
+  font-size: 10px;
   font-weight: bold;
 }
 .main-navbar .ui-icon{
