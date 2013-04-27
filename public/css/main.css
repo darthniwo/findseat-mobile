@@ -185,7 +185,9 @@ ul.ui-listview li span.genre b{font-weight: bold;}
 ul.ui-listview li span.rating{
   background:url('../img/icons/findseat-icons/star.svg') no-repeat top left;
   background-size: auto 100%;
-  padding-left:22px;
+  display:inline-block;
+  height:13px;
+  padding:2px 0px 2px 22px;
 }
 
 .ui-li-thumb{
@@ -217,6 +219,7 @@ ul.ui-listview li span.rating{
   background: -ms-linear-gradient(top,  #29313d 0%,#303949 100%); /* IE10+ */
   background: linear-gradient(to bottom,  #29313d 0%,#303949 100%); /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#29313d', endColorstr='#303949',GradientType=0 ); /* IE6-9 */
+  z-index: 1;
 }
 
 .ui-navbar.main-navbar li{
@@ -250,8 +253,8 @@ ul.ui-listview li span.rating{
 ===========================================================================*/
 .arrow_box {
   position: relative;
-  background: #272F3A;
-  border: 1px solid #272F3A;
+  background: #303949;
+  border: 1px solid #303949;
 }
 .arrow_box:after, .arrow_box:before {
   top: 100%;
@@ -265,14 +268,14 @@ ul.ui-listview li span.rating{
 
 .arrow_box:after {
   border-color: rgba(39, 47, 58, 0);
-  border-top-color: #272F3A;
+  border-top-color: #303949;
   border-width: 10px;
   left: 50%;
   margin-left: -10px;
 }
 .arrow_box:before {
   border-color: rgba(39, 47, 58, 0);
-  border-top-color: #272F3A;
+  border-top-color: #303949;
   border-width: 11px;
   left: 50%;
   margin-left: -11px;
