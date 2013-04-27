@@ -232,6 +232,7 @@ ul.ui-listview li span.rating{
 .ui-navbar.main-navbar .ui-btn-text{
   font-size: 10px;
   font-weight: bold;
+  text-shadow:0px 0px rgba(0,0,0,0.5) !important;
 }
 .main-navbar .ui-icon{
   height:15px !important;
@@ -248,6 +249,15 @@ ul.ui-listview li span.rating{
 .main-navbar .ui-icon-ticket{background:url('../img/icons/findseat-icons/ticket.svg');}
 .main-navbar .ui-icon-friends{background:url('../img/icons/findseat-icons/friends.svg');}
 .main-navbar .ui-icon-search{background:url('../img/icons/findseat-icons/search.svg');}
+
+.tab-container{
+  overflow-x:hidden;
+  overflow-y:scroll;
+}
+
+.trailer{
+  display:none;
+}
 /*=========================================================================
   Arrow box
 ===========================================================================*/
