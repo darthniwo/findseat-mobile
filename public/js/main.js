@@ -35,7 +35,7 @@ $(function(){
 			}, false);
 			el.addEventListener("touchend", function(e) {
 			  e.preventDefault();
-			  $(this).css("-webkit-transform", "translate3d(0, 0, 0)");
+			  // $(this).css("-webkit-transform", "translate3d(0, 0, 0)");
 			  console.log('touchend');
 			}, false);
 	  }
