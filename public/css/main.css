@@ -218,6 +218,21 @@ ul.ui-listview li span.genre b{font-weight: bold;}
   font-size: 11px;
   font-weight: bold;
 }
+.main-navbar .ui-icon{
+  height:15px !important;
+  top:15px !important;
+  left: 0 !important;
+  margin-left: 0 !important;
+  background-size: auto 100% !important;
+  background-repeat: no-repeat !important;
+  background-position: top center !important;
+  width:100% !important;
+}
+
+.main-navbar .ui-icon-user{background:url('../img/icons/findseat-icons/profile.svg');}
+.main-navbar .ui-icon-ticket{background:url('../img/icons/findseat-icons/ticket.svg');}
+.main-navbar .ui-icon-friends{background:url('../img/icons/findseat-icons/friends.svg');}
+.main-navbar .ui-icon-search{background:url('../img/icons/findseat-icons/search.svg');}
 /*=========================================================================
   Arrow box
 ===========================================================================*/
