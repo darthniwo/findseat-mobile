@@ -255,6 +255,40 @@ ul.ui-listview li span.rating{
   overflow-y:scroll;
 }*/
 
+.ui-navbar li a.ui-btn{width:100%;}
+
+.ui-navbar .ui-icon-billboard{
+  background:url('../img/icons/findseat-icons/strip-grey.svg');
+  background-size: cover;
+  display:inline-block;
+  height:20px;
+  width:20px;
+  left: -4px;
+  position: relative;
+  top: 3px;
+}
+
+.ui-navbar .active .ui-icon-billboard{
+  background:url('../img/icons/findseat-icons/strip-blue.svg');
+  background-size: cover;
+}
+
+.ui-navbar .ui-icon-location{
+  background:url('../img/icons/findseat-icons/location-grey.svg');
+  background-size: cover;
+  display:inline-block;
+  height:20px;
+  width:20px;
+  left: -4px;
+  position: relative;
+  top: 3px;
+}
+
+.ui-navbar .active .ui-icon-location{
+  background:url('../img/icons/findseat-icons/location-blue.svg');
+  background-size: cover;
+}
+
 .trailer{
   display:none;
 }
