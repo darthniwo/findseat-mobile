@@ -1,4 +1,7 @@
 $(function(){
+
+	$(document).bind('pageinit', function(){
+		console.log('works');
 	 	$(".tab_content").hide();
 	  $("ul.tabs li:first").addClass("active").show();
 	  $(".tab_content:first").show();
@@ -49,6 +52,7 @@ $(function(){
 			//   console.log('touchend');
 			// }, false);
 	  // }
+	 });
 
 
 
