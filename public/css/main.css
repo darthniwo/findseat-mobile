@@ -292,6 +292,69 @@ ul.ui-listview li span.rating{
 .trailer{
   display:none;
 }
+
+#cines ul li{
+  background-color:#29313D;
+  height:140px;
+  position:relative;
+}
+#cines ul li span{
+  color:#F1F1F4;
+  display: block;
+  font-size: 12px;
+  font-weight: normal;
+  margin-bottom:3px;
+  text-shadow:none;
+}
+
+#cines ul li h2{
+  color:#F1F1F4;
+  font-size: 20px;
+  text-shadow:none;
+}
+
+#cines ul li .vendor{
+  background:url('../img/icons/findseat-icons/camera.svg') no-repeat left center;
+  background-size: auto 100%;
+  padding-left: 30px;
+  font-weight: bold;
+  margin-bottom:10px;
+}
+
+#cines ul li .location{
+  background:url('../img/icons/findseat-icons/marker.svg') no-repeat top left;
+  background-size: auto 100%;
+  font-weight: bold;
+  padding-left:25px;
+  padding:5px 0 5px 20px;
+  position: absolute;
+  right: 0;
+  top: 10px; 
+}
+
+#cines ul li .location:before{
+  content:" ";
+  position:absolute;
+  height:8px;
+  width:8px;
+  border-radius:50%;
+  background-color:#29313D;
+  top:4px;
+  left:4px;
+}
+
+#cines ul li .show-movies{
+  border-radius: 3px 3px 3px 3px;
+  color: #FFFFFF;
+  display: block;
+  font-weight: bold;
+  padding:5px 0 8px 0 !important;
+  text-shadow: 0 1px rgba(0, 0, 0, 0.15);
+  text-align:center;
+}
+
+#cines .ui-icon-arrow-r{display:none;}
+
 /*=========================================================================
   Arrow box
 ===========================================================================*/
@@ -403,7 +466,7 @@ li .ui-icon-custom{
     width:83%;
   }
 
-  .btn.red,
+  .btn.red,.red,
   [data-theme="red"]{
     background: #e04b40; /* Old browsers */
     background: -moz-linear-gradient(top,  #e04b40 0%, #d6463c 100%); /* FF3.6+ */
