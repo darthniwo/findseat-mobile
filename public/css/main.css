@@ -379,6 +379,16 @@ ul.ui-listview li span.rating{
 
 #cines .ui-icon-arrow-r{display:none;}
 
+.show .img{
+  height:98px;
+  width:96%;
+  overflow:hidden;
+  position:relative;
+  margin:10px auto;
+}
+
+.show .img img{width:100%;}
+
 /*=========================================================================
   Arrow box
 ===========================================================================*/
