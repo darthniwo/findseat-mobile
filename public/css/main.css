@@ -268,6 +268,16 @@ ul.ui-listview li span.rating{
   top: 3px;
 }
 
+.show-movies .ui-icon-billboard{
+  background:url('../img/icons/findseat-icons/strip.svg');
+  background-size: cover;
+  display:inline-block !important;
+  height:20px;
+  margin-right:10px;
+  width:20px;
+  vertical-align: middle;
+}
+
 .ui-navbar .active .ui-icon-billboard{
   background:url('../img/icons/findseat-icons/strip-blue.svg');
   background-size: cover;
@@ -295,6 +305,8 @@ ul.ui-listview li span.rating{
 
 #cines ul li{
   background-color:#29313D;
+  border-bottom: 1px solid #1C2026;
+  border-top: 1px solid #4C5566;
   height:140px;
   position:relative;
 }
@@ -347,6 +359,7 @@ ul.ui-listview li span.rating{
   border-radius: 3px 3px 3px 3px;
   color: #FFFFFF;
   display: block;
+  font-size: 18px;
   font-weight: bold;
   padding:5px 0 8px 0 !important;
   text-shadow: 0 1px rgba(0, 0, 0, 0.15);
