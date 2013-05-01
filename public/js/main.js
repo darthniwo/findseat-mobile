@@ -18,15 +18,15 @@ $(function(){
 	  
 	  });
 
-	  // if($('.tab-container').length > 0){
-	  // 	$('.tab-container').css('height', $(window).height() - 112);
-	  // }
+	  if($('.tab-container').length > 0){
+	  	$('.tab-container').css('height', $(window).height() - 112);
+	  }
 
 
 	  $(window).resize(function(){
-	  	// if($('.tab-container').length > 0){
-	  	// 	$('.tab-container').css('height', $(window).height() - 112);
-	  	// }
+	  	if($('.tab-container').length > 0){
+	  		$('.tab-container').css('height', $(window).height() - 112);
+	  	}
 	  });
 
 	  // var startX, offsetX, els = document.querySelectorAll("li div.ui-btn-inner");

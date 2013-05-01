@@ -250,10 +250,10 @@ ul.ui-listview li span.rating{
 .main-navbar .ui-icon-friends{background:url('../img/icons/findseat-icons/friends.svg');}
 .main-navbar .ui-icon-search{background:url('../img/icons/findseat-icons/search.svg');}
 
-/*.tab-container{
+.tab-container{
   overflow-x:hidden;
   overflow-y:scroll;
-}*/
+}
 
 .ui-navbar li a.ui-btn{width:100%;}
 
