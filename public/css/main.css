@@ -10,6 +10,8 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
+@import '../fonts/style.css';
+
 html,
 button,
 input,
@@ -400,17 +402,21 @@ ul.ui-listview li span.rating{
   background: -ms-linear-gradient(top,  #f45c4e 0%,#f55849 100%); /* IE10+ */
   background: linear-gradient(to bottom,  #f45c4e 0%,#f55849 100%); /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f45c4e', endColorstr='#f55849',GradientType=0 ); /* IE6-9 */
+  height: 40px;
   text-align: center;
   position:relative;
 }
 
 .title-header .movie{
-  color:#FFF;
-  font-size: 20px;
+  color: #FFF;
+  display: inline-block;
+  font-size: 18px;
   font-weight: 600;
-  display:inline-block;
-  text-shadow:0px -1px rgba(162,68,35,0.9);
-  padding:5px 0 9px;
+  overflow: hidden;
+  padding: 7px 0;
+  text-overflow: ellipsis;
+  text-shadow: 0 -1px rgba(162, 68, 35, 0.9);
+  white-space: nowrap;
 }
 
 ul.show.ui-listview{margin:0;border-top:solid #CCC 1px;border-bottom:solid #FFF 1px;}
@@ -425,6 +431,42 @@ ul.ui-listview.show .synopsis{
 
 #cines.show ul{margin:0;}
 #cines.show ul li{height: 160px;}
+
+.btn-holder{
+  width: 40px;
+  height: 40px;
+}
+
+.btn-holder a{
+  display: block;
+  height: 40px;
+  text-decoration: none;
+  text-align: center;
+  position: relative;
+}
+
+.btn-holder a span{
+  font-size: 11px;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 12px;
+  z-index: 1;
+}
+
+.btn-holder a i{
+  color:#FFF;
+  text-shadow:0px -1px rgba(162,68,35,0.9);
+  position: absolute;
+  left:0;top:12px;right:0;bottom:0;
+  margin:auto;
+}
+
+.btn-holder.left{border-right: 1px solid #C5453A;}
+.btn-holder.left a{border-right: 1px solid #F47A69;} 
+.btn-holder.right{border-left: 1px solid #C5453A;}
+.btn-holder.right a{border-left: 1px solid #F47A69;} 
 
 /*=========================================================================
   Arrow box
