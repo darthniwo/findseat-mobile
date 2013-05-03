@@ -45,7 +45,8 @@ window.onload = function() {
 			'findseat-icon-lit-arrow-right' : '&#xe024;',
 			'findseat-icon-lit-arrow-left' : '&#xe025;',
 			'findseat-icon-profile' : '&#xe026;',
-			'findseat-icon-back' : '&#xe027;'
+			'findseat-icon-back' : '&#xe027;',
+			'findseat-icon-phone' : '&#xe028;'
 		},
 		els = document.getElementsByTagName('*'),
 		i, attr, html, c, el;

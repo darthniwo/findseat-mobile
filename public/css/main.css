@@ -392,6 +392,7 @@ ul.ui-listview li span.rating{
 
 .show .img img{width:100%;}
 
+#dashboard.show .ui-content{padding-top:40px;}
 
 .title-header{
   background: #f45c4e; /* Old browsers */
@@ -403,8 +404,11 @@ ul.ui-listview li span.rating{
   background: linear-gradient(to bottom,  #f45c4e 0%,#f55849 100%); /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f45c4e', endColorstr='#f55849',GradientType=0 ); /* IE6-9 */
   height: 40px;
+  margin-top: -40px;
+  position: fixed;
   text-align: center;
-  position:relative;
+  width: 100%;
+  z-index: 10;
 }
 
 .title-header .movie{
@@ -507,6 +511,16 @@ ul.ui-listview.show .synopsis{
 /*[class^="iconset-"]{
 
 }*/
+
+[class^="findseat-icon-"]{margin-right:5px;}
+[class^="alone findseat-icon-"]{margin-right:0;}
+
+ul.tabs span[class^="findseat-icon-"]{
+  font-size: 20px;
+  margin-right: 5px;
+  position: relative;
+  top: 1px;
+}
 
 .ui-icon{
   background:url('../img/icons/icons.png') no-repeat 0px 0px;
