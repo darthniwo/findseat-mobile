@@ -181,6 +181,7 @@ ul.ui-listview li span.genre{
   color:#FFF;
   display:inline-block;
   font-weight: normal;
+  margin-top:5px;
   text-shadow:0px 1px rgba(0,0,0,0.15);
   padding:3px 20px 6px 5px;
 }
@@ -388,6 +389,42 @@ ul.ui-listview li span.rating{
 }
 
 .show .img img{width:100%;}
+
+
+.title-header{
+  background: #f45c4e; /* Old browsers */
+  background: -moz-linear-gradient(top,  #f45c4e 0%, #f55849 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f45c4e), color-stop(100%,#f55849)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #f45c4e 0%,#f55849 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #f45c4e 0%,#f55849 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #f45c4e 0%,#f55849 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  #f45c4e 0%,#f55849 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f45c4e', endColorstr='#f55849',GradientType=0 ); /* IE6-9 */
+  text-align: center;
+  position:relative;
+}
+
+.title-header .movie{
+  color:#FFF;
+  font-size: 20px;
+  font-weight: 600;
+  display:inline-block;
+  text-shadow:0px -1px rgba(162,68,35,0.9);
+  padding:5px 0 9px;
+}
+
+ul.show.ui-listview{margin:0;border-top:solid #CCC 1px;border-bottom:solid #FFF 1px;}
+ul.show.ui-listview .ui-btn-text a.ui-link-inherit{padding:8px 10px 8px 0px !important;}
+ul.show.ui-listview li{height:150px;}
+ul.show.ui-listview li .ui-icon-custom{top:86% !important;}
+ul.ui-listview.show .synopsis{
+  font-weight: normal;
+  overflow: visible;
+  white-space: normal;
+}
+
+#cines.show ul{margin:0;}
+#cines.show ul li{height: 160px;}
 
 /*=========================================================================
   Arrow box
