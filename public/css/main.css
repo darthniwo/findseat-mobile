@@ -472,6 +472,10 @@ ul.ui-listview.show .synopsis{
 .btn-holder.right{border-left: 1px solid #C5453A;}
 .btn-holder.right a{border-left: 1px solid #F47A69;} 
 
+#rsvp{
+  background-color: #F1F1F4;
+}
+
 /*=========================================================================
   Arrow box
 ===========================================================================*/
