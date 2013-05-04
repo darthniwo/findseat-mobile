@@ -674,8 +674,12 @@ ul.ui-listview.show .synopsis{
 }*/
 
 .ui-icon-loading {
-  background: url(img/icons/loading.gif);
+  background: url('../img/icons/loadingx36.gif') no-repeat !important;
+  border-radius: 0 !important;
   /*background-size: cover;*/
+}
+.ui-loader-default{
+  opacity: 0.8 !important;
 }
 
 
