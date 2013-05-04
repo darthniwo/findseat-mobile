@@ -673,6 +673,12 @@ ul.ui-listview.show .synopsis{
 
 }*/
 
+.ui-icon-loading {
+  background: url(img/icons/loading.gif);
+  /*background-size: cover;*/
+}
+
+
 [class^="findseat-icon-"]{margin-right:5px;}
 [class^="alone findseat-icon-"]{margin-right:0;}
 
