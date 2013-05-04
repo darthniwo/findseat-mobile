@@ -423,6 +423,7 @@ ul.ui-listview li span.rating{
 .title-header .movie{
   color: #FFF;
   display: inline-block;
+  position: relative;
   font-size: 18px;
   font-weight: 600;
   overflow: hidden;
@@ -481,6 +482,12 @@ ul.ui-listview.show .synopsis{
 .btn-holder.right{border-left: 1px solid #C5453A;}
 .btn-holder.right a{border-left: 1px solid #F47A69;} 
 
+#rsvp-popup{
+  left: 50% !important;
+  margin-left: -125px;
+  width: 250px;
+}
+
 #rsvp{
   background-color: #F1F1F4;
   border-radius:5px;
@@ -520,7 +527,111 @@ ul.ui-listview.show .synopsis{
   -webkit-filter: grayscale(0.5) blur(10px);
 }
 
+#movie_comments{background-color:#F1F1F4;}
 
+#movie_comments .title-header{
+  background:#F1F1F4;
+  margin:0;
+  position: static;
+  border-bottom:solid #E6E6E8 1px;
+}
+
+#movie_comments .title-header .btn-holder{border-right:solid 1px #FFF;}
+#movie_comments .title-header .btn-holder a{border-right:solid 1px #E6E6E8;}
+#movie_comments .title-header .btn-holder i{color:#929292;text-shadow:0 -1px #FFF;}
+
+#movie_comments .head-container{border-bottom:solid #FFF 1px;}
+#movie_comments .title-header .movie{
+  color:#929292;
+  overflow: visible;
+  text-shadow:0 -1px #FFF;
+}
+#movie_comments .title-header .comments{
+  position:absolute;
+  left:-35px;
+}
+
+#movie_comments .title-header .comments i{
+  color:#929292;
+  font-size: 24px;
+  text-shadow:0 -1px #FFF;
+}
+
+#movie_comments .title-header .comments small{
+  color:#FFF;
+  text-shadow:0px -1px rgba(0,0,0,0.5);
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.comment-feed{
+  padding:0;
+  list-style: none;
+}
+
+.comment-feed li{margin-bottom:10px;}
+
+.comment-feed span,
+.comment-feed a.name{
+  color:#929292;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.comment-feed p{
+  color:#B1B1B1;
+  font-size: 12px;
+  margin: 0px;
+}
+
+.comment-feed small{
+  color:#D1D1D2;
+  font-size: 11px;
+}
+
+.comment-feed .img{
+  border:solid 3px #5E636C;
+  border-radius: 50%;
+  height:45px;
+  margin-top:5px;
+  overflow: hidden;
+  width:45px;
+}
+
+.comment-feed .img img{width:100%;}
+
+.comment-form{border-top:solid #CCC 1px;}
+
+.comment-form input[type="text"]{
+  background:transparent;
+  border:0 none;
+  float:left;
+  padding:10px 5px;
+  width: 70%;
+}
+
+.comment-form input[type="submit"]{
+  background: #f45c4e; /* Old browsers */
+  background: -moz-linear-gradient(top,  #f45c4e 0%, #f55849 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f45c4e), color-stop(100%,#f55849)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #f45c4e 0%,#f55849 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #f45c4e 0%,#f55849 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #f45c4e 0%,#f55849 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  #f45c4e 0%,#f55849 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f45c4e', endColorstr='#f55849',GradientType=0 ); /* IE6-9 */
+  border-radius: 3px;
+  color:#FFF;
+  font-size: 12px;
+  float:right;
+  border:0 none;
+  margin:5px 10px 5px 0;
+  padding:10px 15px;
+}
 
 /*=========================================================================
   Arrow box
@@ -660,7 +771,7 @@ li .ui-icon-custom{
     box-shadow: 0px 4px #6E7E00;
     text-align: center;
     color:#FFF;
-    text-shadow:0px 2px #6E7E00;
+    text-shadow:0px 1px #6E7E00;
     text-decoration: none;
     width: 100%;
     margin-top:10px;
@@ -816,12 +927,14 @@ textarea[contenteditable] {
 .right{float:right;}
 .clear{clear:left;}}
 .clearall{clear:both;}
+.media{display:block;}
 .media .img{
   float:left;
   margin-right:10px;
 }
 .media .body{
   overflow:hidden;
+  margin-bottom:0;
 }
 
 /* ==========================================================================
