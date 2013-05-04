@@ -375,9 +375,18 @@ ul.ui-listview li span.rating{
   display: block;
   font-size: 18px;
   font-weight: bold;
+  margin-top:15px;
   padding:5px 0 8px 0 !important;
   text-shadow: 0 1px rgba(0, 0, 0, 0.15);
   text-align:center;
+  position: relative;
+}
+
+#cines ul .show-movies i{
+  float: left;
+  left: 15px;
+  position: absolute;
+  top: 10px;
 }
 
 #cines .ui-icon-arrow-r{display:none;}
@@ -474,7 +483,19 @@ ul.ui-listview.show .synopsis{
 
 #rsvp{
   background-color: #F1F1F4;
+  border-radius:5px;
+  -moz-box-shadow: 0px 0px 2px 2px rgba(0,0,0,0.4);
+  -webkit-box-shadow: 0px 0px 2px 2px rgba(0,0,0,0.4);
+  box-shadow: 0px 0px 2px 2px rgba(0,0,0,0.4);
+  padding:10px;
 }
+
+#rsvp-screen{
+  background-color:#FFF;
+  -webkit-filter: grayscale(0.5) blur(10px);
+}
+
+
 
 /*=========================================================================
   Arrow box
