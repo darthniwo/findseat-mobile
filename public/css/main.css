@@ -488,6 +488,31 @@ ul.ui-listview.show .synopsis{
   -webkit-box-shadow: 0px 0px 2px 2px rgba(0,0,0,0.4);
   box-shadow: 0px 0px 2px 2px rgba(0,0,0,0.4);
   padding:10px;
+  width:98%;
+}
+
+#rsvp .close{
+  background-color: #888888;
+  border-radius: 50%;
+  color: #FFFFFF;
+  font-weight: bold;
+  padding: 2px 7px;
+  right: 10px;
+  text-align: center;
+  text-decoration: none;
+  top: 5px;
+}
+
+#rsvp  h2{
+  color:#666;
+  font-size: 20px;
+  text-shadow:0px 1px #FFF;
+}
+
+#rsvp span{
+  color:#666;
+  font-size: 12px;
+  text-shadow:0px 1px #FFF;
 }
 
 #rsvp-screen{
@@ -614,7 +639,6 @@ li .ui-icon-custom{
     box-shadow:0px 0px 0px 4px rgba(255,255,255,0.15);
     border-radius:3px;
     margin:0 auto 18px;
- 
     width:83%;
   }
 
@@ -630,7 +654,18 @@ li .ui-icon-custom{
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e04b40', endColorstr='#d6463c',GradientType=0 ); /* IE6-9 */
   }
 
-
+  .btn.green{
+    display:inline-block;
+    background-color: #B2D153;
+    box-shadow: 0px 4px #6E7E00;
+    text-align: center;
+    color:#FFF;
+    text-shadow:0px 2px #6E7E00;
+    text-decoration: none;
+    width: 100%;
+    margin-top:10px;
+    padding:5px 0;
+  }
 
 
 /* ==========================================================================
