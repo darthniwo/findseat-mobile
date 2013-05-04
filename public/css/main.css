@@ -67,8 +67,11 @@ textarea {
    Author's custom styles
    ========================================================================== */
 body{
-  background:#000 url('../img/backgrounds/body.jpg') no-repeat 0px -30px !important;
   font-family: 'Open Sans', sans-serif;
+}
+
+body.landing{
+  background:#000 url('../img/backgrounds/body.jpg') no-repeat 0px -30px !important;
 }
 
 /* Login - signup page*/
