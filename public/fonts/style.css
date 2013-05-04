@@ -28,7 +28,7 @@ Instead of a list of all class selectors,
 you can use the generic selector below, but it's slower:
 [class*="findseat-icon-"] {
 */
-.findseat-icon-white-bubble, .findseat-icon-user, .findseat-icon-up, .findseat-icon-twitter-icon, .findseat-icon-marker, .findseat-icon-mail, .findseat-icon-love-badge, .findseat-icon-location-grey, .findseat-icon-arrow-right, .findseat-icon-arrow-left, .findseat-icon-add, .findseat-icon-action-badge, .findseat-icon-time, .findseat-icon-ticket, .findseat-icon-thriller-badge, .findseat-icon-terror-badge, .findseat-icon-strip, .findseat-icon-star, .findseat-icon-sport-badge, .findseat-icon-settigns, .findseat-icon-seat-badge, .findseat-icon-search, .findseat-icon-right-oath, .findseat-icon-retype, .findseat-icon-reload, .findseat-icon-left-oath, .findseat-icon-key, .findseat-icon-friends, .findseat-icon-fantasy-badge, .findseat-icon-facebook-icon, .findseat-icon-earth-badge, .findseat-icon-drama-badge, .findseat-icon-comedy-badge, .findseat-icon-camera, .findseat-icon-camera-badge, .findseat-icon-calendar, .findseat-icon-lit-arrow-right, .findseat-icon-lit-arrow-left, .findseat-icon-profile, .findseat-icon-back, .findseat-icon-phone {
+.findseat-icon-white-bubble, .findseat-icon-user, .findseat-icon-up, .findseat-icon-twitter-icon, .findseat-icon-marker, .findseat-icon-mail, .findseat-icon-love-badge, .findseat-icon-location-grey, .findseat-icon-arrow-right, .findseat-icon-arrow-left, .findseat-icon-add, .findseat-icon-action-badge, .findseat-icon-time, .findseat-icon-ticket, .findseat-icon-thriller-badge, .findseat-icon-terror-badge, .findseat-icon-strip, .findseat-icon-star, .findseat-icon-sport-badge, .findseat-icon-settings, .findseat-icon-seat-badge, .findseat-icon-search, .findseat-icon-right-oath, .findseat-icon-retype, .findseat-icon-reload, .findseat-icon-left-oath, .findseat-icon-key, .findseat-icon-friends, .findseat-icon-fantasy-badge, .findseat-icon-facebook-icon, .findseat-icon-earth-badge, .findseat-icon-drama-badge, .findseat-icon-comedy-badge, .findseat-icon-camera, .findseat-icon-camera-badge, .findseat-icon-calendar, .findseat-icon-lit-arrow-right, .findseat-icon-lit-arrow-left, .findseat-icon-profile, .findseat-icon-back, .findseat-icon-phone {
 	font-family: 'findseat-icon-font';
 	speak: none;
 	font-style: normal;
@@ -95,7 +95,7 @@ you can use the generic selector below, but it's slower:
 .findseat-icon-sport-badge:before {
 	content: "\e014";
 }
-.findseat-icon-settigns:before {
+.findseat-icon-settings:before {
 	content: "\e015";
 }
 .findseat-icon-seat-badge:before {
