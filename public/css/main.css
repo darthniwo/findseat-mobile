@@ -834,6 +834,9 @@ ul.ui-listview.show .synopsis{
 #profile .badges li{
   position:relative;
 }
+
+.ui-header, .ui-footer{z-index: 100;}
+
 /*=========================================================================
   Arrow box
 ===========================================================================*/
