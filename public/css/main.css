@@ -730,6 +730,8 @@ ul.ui-listview.show .synopsis{
   text-shadow:0px 1px rgba(0,0,0,0.15);
 }
 
+
+
 #profile span.city{
   color:#FFF;
   display: block;
@@ -803,6 +805,7 @@ ul.ui-listview.show .synopsis{
 
 #profile .badges i{
   background-color: #232A35;
+  box-shadow: 0px 1px rgba(59,67,78,0.8);
   border-radius: 50% 50% 50% 50%;
   color: rgba(255, 255, 255, 0.3);
   display: inline-block;
@@ -812,6 +815,8 @@ ul.ui-listview.show .synopsis{
   text-align: center;
   width: 30px;
 }
+
+#profile .badges .active i{color:#FFF;}
 
 #profile .badges .show-badges{
   background-color: #FFFFFF;
@@ -826,6 +831,9 @@ ul.ui-listview.show .synopsis{
   width:30px;
 }
 
+#profile .badges li{
+  position:relative;
+}
 /*=========================================================================
   Arrow box
 ===========================================================================*/
@@ -858,6 +866,20 @@ ul.ui-listview.show .synopsis{
   left: 50%;
   margin-left: -11px;
 }
+
+/*=========================================================================
+  Tooltip
+===========================================================================*/
+
+.tooltip{
+  border-radius:5px;
+  color: #fff;
+  background: #111;
+  margin-top:-50px;
+  padding:5px 10px;
+}
+
+.tooltip span{margin:0;}
 
 /* ==========================================================================
     Icons

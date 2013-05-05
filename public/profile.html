@@ -48,7 +48,7 @@
   <body>
 
       <div data-role="page" id="profile" class="">
-        <div data-role="header" class="" data-position="fixed" data-tap-toggle="false">
+        <div data-role="header" class="" data-tap-toggle="false">
           <a href="" data-rel="back" data-role="none"><i class="findseat-icon-up"></i></a>
           <a href="" data-role="none"><i class="findseat-icon-settings"></i></a>
           <div class="main-pic"><img src="img/misc/profile-pic-sample.jpg" alt=""></div>
@@ -88,21 +88,78 @@
           <div class="badges">
             <h3>Medallas</h3>
             <ul>
-              <li><i class="findseat-icon-fantasy-badge"></i></li>
-              <li><i class="findseat-icon-thriller-badge"></i></li>
-              <li><i class="findseat-icon-love-badge"></i></li>
-              <li><i class="findseat-icon-sport-badge"></i></li>
-              <li><i class="findseat-icon-terror-badge"></i></li>
-              <li><span class="show-badges">+</span></li>
+              <li class="active">
+                <a href="#fantasy" data-rel="popup"><i class="findseat-icon-fantasy-badge"></i></a>
+                <div data-role="popup" id="fantasy" class="tooltip">
+                   <span>Fantasia</span>
+                </div>
+              </li>
+              <li class="active">
+                <a href="#action" data-rel="popup"><i class="findseat-icon-thriller-badge"></i></a>
+                <div id="action" data-role="popup" class="tooltip">
+                  <span>Acción</span>
+                </div>
+              </li>
+              <li class="active">
+                <a href="#love" data-rel="popup"><i class="findseat-icon-love-badge"></i></a>
+                <div id="love" data-role="popup" class="tooltip">
+                  <span>Romance</span>
+                </div>
+              </li>
+              <li>
+                <a href="#sports" data-rel="popup"><i class="findseat-icon-sport-badge"></i></a>
+                <div id="sports" class="tooltip" data-role="popup">
+                  <span>Deportes</span>
+                </div>
+              </li>
+              <li>
+                <a href="#terror" data-rel="popup"><i class="findseat-icon-terror-badge"></i></a>
+                <div id="terror" class="tooltip" data-role="popup">
+                  <span>Terror</span>
+                </div>
+              </li>
+              <li>
+                <span class="show-badges">+</span>
+              </li>
             </ul>
             <div class="hidden-badges clearfix clear">
               <ul>
-              <li><i class="findseat-icon-earth-badge"></i></li>
-              <li><i class="findseat-icon-camera-badge"></i></li>
-              <li><i class="findseat-icon-action-badge"></i></li>
-              <li><i class="findseat-icon-comedy-badge"></i></li>
-              <li><i class="findseat-icon-drama-badge"></i></li>
-              <li><i class="findseat-icon-seat-badge"></i></li>
+              <li>
+                <a href="#earth" data-rel="popup"><i class="findseat-icon-earth-badge"></i></a>
+                <div id="earth" class="tooltip" data-role="popup">
+                  <span>Planeta</span>
+                </div>
+              </li>
+              <li>
+                <a href="#camera" dara-rel="popup"><i class="findseat-icon-camera-badge"></i></a>
+                <div id="camera" class="tooltip" data-role="popup">
+                  <span>Camara</span>
+                </div>
+              </li>
+              <li>
+                <a href="#bomb" data-rel="popup"><i class="findseat-icon-action-badge"></i></a>
+                <div id="bomb" class="tooltip" data-role="popup">
+                  <span>Suspenso</span>
+                </div>
+              </li>
+              <li>
+                <a href="#comedy" data-rel="popup"><i class="findseat-icon-comedy-badge"></i></a>
+                <div id="comedy" class="tooltip" data-role="popup">
+                  <span>Comedia</span>
+                </div>
+              </li>
+              <li>
+                <a href="#drama" data-rel="popup"><i class="findseat-icon-drama-badge"></i></a>
+                <div id="drama" class="tooltip" data-role="popup">
+                  <span>Drama</span>
+                </div>
+              </li>
+              <li>
+                <a href="#seat" data-rel="popup"><i class="findseat-icon-seat-badge"></i></a>
+                <div id="seat" class="tooltip" data-role="popup">
+                  <span>Findseat</span>
+                </div>
+              </li>
             </ul>
             </div>
            
