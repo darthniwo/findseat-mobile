@@ -24,6 +24,18 @@ $(function(){
 	  if($('.main-navbar li.current').prev().length > 0){
 	  	$('.main-navbar li.current').prev().addClass('border-right');
 	  }
+
+	  $('.badges .show-badges').on('tap', function(){
+	  	console.log('tap tap tap');
+	  	$('li.social-network').slideToggle();
+	  	$('.badges .hidden-badges').slideToggle();
+	  	$(this).toggleClass('open');
+	  	if($(this).hasClass('open')){
+	  		$(this).text('-');
+	  	}else{
+	  		$(this).text('+');
+	  	}
+	  });
 	  // if($('.tab-container').length > 0){
 	  // 	$('.tab-container').css('height', $(window).height() - 112);
 	  // }

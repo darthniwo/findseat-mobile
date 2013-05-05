@@ -651,6 +651,7 @@ ul.ui-listview.show .synopsis{
 }
 
 #profile,
+#profile .ui-footer,
 #profile .ui-navbar.main-navbar li.current{background-color: #2E3746;}
 #profile .ui-navbar.main-navbar li{
   background-color: #1E252F;
@@ -711,7 +712,7 @@ ul.ui-listview.show .synopsis{
   margin: 0 auto;
   overflow: hidden;
   position: relative;
-  top: 60px;
+  top: 40px;
   width: 160px;
 }
 
@@ -723,7 +724,7 @@ ul.ui-listview.show .synopsis{
   color:#FFF;
   font-size: 22px;
   font-weight: 600;
-  margin-top:60px;
+  margin-top:35px;
   margin-bottom: 2px;
   text-align: center;
   text-shadow:0px 1px rgba(0,0,0,0.15);
@@ -773,6 +774,8 @@ ul.ui-listview.show .synopsis{
 #profile .views a i.tol{left:-10px;}
 #profile .views i.right{margin-top:2px;}
 
+.profile-feed .social-network{margin-bottom: 10px;}
+
 .profile-feed .social-network a{
   color:#94989E;
   font-size: 12px;
@@ -785,7 +788,43 @@ ul.ui-listview.show .synopsis{
   font-size: 14px;
 }
 
+#profile h3{
+  color:#FFF;
+  font-size: 12px;
+  font-weight: 600;
+  text-align: center;
+}
 
+#profile .badges{
+  padding:0 15px;
+}
+
+#profile .badges .hidden-badges{display: none;}
+
+#profile .badges i{
+  background-color: #232A35;
+  border-radius: 50% 50% 50% 50%;
+  color: rgba(255, 255, 255, 0.3);
+  display: inline-block;
+  font-size: 15px;
+  height: 30px;
+  line-height: 2;
+  text-align: center;
+  width: 30px;
+}
+
+#profile .badges .show-badges{
+  background-color: #FFFFFF;
+  border-radius: 50% 50% 50% 50%;
+  color: #29313D;
+  display: inline-block;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 1.17;
+  text-align: center;
+  height: 30px;
+  width:30px;
+}
 
 /*=========================================================================
   Arrow box
