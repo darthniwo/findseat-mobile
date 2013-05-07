@@ -838,7 +838,7 @@ ul.ui-listview.show .synopsis{
 
 .ui-header, .ui-footer{z-index: 100;}
 
-.ui-content.settings{padding-top:10px;}
+.ui-content.settings{padding-top:40px !important;}
 
 .fields{
   background-color:#FFF;
