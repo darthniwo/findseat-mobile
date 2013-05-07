@@ -838,6 +838,89 @@ ul.ui-listview.show .synopsis{
 
 .ui-header, .ui-footer{z-index: 100;}
 
+.ui-content.settings{padding-top:10px;}
+
+.fields{
+  background-color:#FFF;
+  -weblit-box-shadow:0px 0px 0px 4px rgba(255,255,255,0.15);
+  -moz-box-shadow:0px 0px 0px 4px rgba(255,255,255,0.15);
+  box-shadow:0px 0px 0px 4px rgba(255,255,255,0.15);
+  border-radius:3px;
+  margin:0 auto;
+  overflow: hidden;
+  width:90%;
+}
+
+.settings fieldset label{
+  color:#5B6E8B;
+  display: block;
+  font-size: 17px;
+  font-weight: 600;
+  margin:0 auto;
+  padding:20px 0 10px 0;
+  width:90%;
+}
+
+.field{
+  border-bottom:solid #EEE 1px; 
+  padding:10px 0;
+  position:relative;
+}
+
+.field input{
+  background:transparent;
+  border:0;
+  border-left:solid #EEE 1px;
+  color:#CCC;
+  padding:0 5px;
+}
+
+.field input.readonly{visibility: hidden;}
+
+.field i{
+  color: #CCC;
+  display: inline-block;
+  font-size: 12px;
+  height: 24px;
+  line-height: 1.5;
+  text-align: center;
+  vertical-align: middle;
+  width: 35px;
+}
+
+.field.location i,
+.field.facebook i{font-size: 14px;}
+
+.field a.connect{
+  border-left:solid #EEE 1px;
+  color:#CCC;
+  padding:0 5px;
+  position:absolute;
+  top:11px;
+  left:37px;
+}
+
+.settings-submit{
+  border-radius: 3px;
+  -weblit-box-shadow:0px 0px 0px 4px rgba(255,255,255,0.15);
+  -moz-box-shadow:0px 0px 0px 4px rgba(255,255,255,0.15);
+  box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.15);
+  color: #FFF;
+  display: block;
+  font-weight: 600;
+  margin: 20px auto;
+  padding: 5px 0;
+  text-align: center;
+  position: relative;
+  width: 90%;
+}
+
+.settings-submit i{
+  left:5px;
+  top:7px;
+  position: absolute;
+}
+
 /*=========================================================================
   Arrow box
 ===========================================================================*/
