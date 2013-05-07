@@ -72,7 +72,9 @@ body{
 }
 
 body.landing{
-  background:#000 url('../img/backgrounds/body.jpg') no-repeat 0px -30px !important;
+  /*background:#000 url('../img/backgrounds/body.jpg') no-repeat 0px -30px !important;*/
+  background:#000 url('../img/backgrounds/anim.gif') no-repeat top left;
+  background-size: 100%;
 }
 
 /* Login - signup page*/
