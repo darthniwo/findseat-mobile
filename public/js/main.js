@@ -41,6 +41,10 @@ $(function(){
 	  	var self = $(this);
 	  	self.addClass('trailer-open');
 	  });
+	  $('#cartelera ul.ui-listview li').on( 'swipeleft', function(){
+	  	var self = $(this);
+	  	self.removeClass('trailer-open');
+	  });
 	  // if($('.tab-container').length > 0){
 	  // 	$('.tab-container').css('height', $(window).height() - 112);
 	  // }
