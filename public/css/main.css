@@ -313,8 +313,24 @@ ul.ui-listview li span.rating{
   background-size: cover;
 }
 
+#cartelera ul.ui-listview li{}
+
+#cartelera ul.ui-listview li a{position:relative;transition: left 0.3s linear;}
+#cartelera ul.ui-listview li.trailer-open a{left:97px;}
+#cartelera ul.ui-listview li.trailer-open .trailer{opacity: 1;}
+
 .trailer{
-  display:none;
+  background-color: #29313D;
+  display:block;
+  height: 185px;
+  margin: -12px;
+  position:absolute;
+  width:97px;
+  z-index: -1;
+  opacity: 0;
+  transition: left 0.3s linear;
+ /* transform: translate(-97px);*/
+  /*left:-97px;*/
 }
 
 #tab-holder{

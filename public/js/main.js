@@ -36,6 +36,11 @@ $(function(){
 	  		$(this).text('+');
 	  	}
 	  });
+
+	  $('#cartelera ul.ui-listview li').on( 'swiperight', function(){
+	  	var self = $(this);
+	  	self.addClass('trailer-open');
+	  });
 	  // if($('.tab-container').length > 0){
 	  // 	$('.tab-container').css('height', $(window).height() - 112);
 	  // }
