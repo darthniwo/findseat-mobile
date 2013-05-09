@@ -1300,7 +1300,11 @@ textarea[contenteditable] {
 
 @media only screen and (min-width: 800px) {
     /* Style adjustments for viewports that meet the condition */
-    body{
+
+}
+
+@media(max-width:600px){
+  body{
       background-size:568px 320px;
     }
 }
