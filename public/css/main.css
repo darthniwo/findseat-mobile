@@ -787,7 +787,7 @@ ul.ui-listview.show .synopsis{
   opacity: 0;
 }
 
-#profile .main-pic img{width:100%;}
+#profile .main-pic img{width:100%;border-radius: 50%;}
 
 .badges ul li{float:left;margin-bottom:10px;}
 
