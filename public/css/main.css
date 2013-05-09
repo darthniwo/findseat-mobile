@@ -74,7 +74,7 @@ body{
 body.landing{
   /*background:#000 url('../img/backgrounds/body.jpg') no-repeat 0px -30px !important;*/
   background:#000 url('../img/backgrounds/anim.gif') no-repeat top left;
-  background-size: 100%;
+  background-size: 320px 568px;
 }
 
 /* Login - signup page*/
@@ -1300,6 +1300,9 @@ textarea[contenteditable] {
 
 @media only screen and (min-width: 800px) {
     /* Style adjustments for viewports that meet the condition */
+    body{
+      background-size:568px 320px;
+    }
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
