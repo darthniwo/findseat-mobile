@@ -69,6 +69,7 @@ textarea {
    ========================================================================== */
 body{
   font-family: 'Open Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
 body.landing{
@@ -483,6 +484,7 @@ ul.ui-listview.show .synopsis{
 }
 
 .btn-holder a span{
+  color:#A4441B;
   font-size: 11px;
   left: 0;
   margin: auto;
@@ -507,8 +509,8 @@ ul.ui-listview.show .synopsis{
 
 #rsvp-popup{
   left: 50% !important;
-  margin-left: -125px;
-  width: 250px;
+  margin-left: -115px;
+  width: 230px;
 }
 
 #rsvp{
@@ -546,7 +548,7 @@ ul.ui-listview.show .synopsis{
 }
 
 #rsvp-screen{
-  background-color:#FFF;
+  background-color:#000;
   -webkit-filter: grayscale(0.5) blur(10px);
 }
 
@@ -1121,16 +1123,18 @@ li .ui-icon-custom{
   }
 
   .btn.green{
-    display:inline-block;
     background-color: #B2D153;
-    box-shadow: 0px 4px #6E7E00;
+    box-shadow: 0 2px #6E7E00;
+    color: #FFFFFF;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 10px 0 10px 5px;
+    padding: 7px 0;
     text-align: center;
-    color:#FFF;
-    text-shadow:0px 1px #6E7E00;
     text-decoration: none;
-    width: 100%;
-    margin-top:10px;
-    padding:5px 0;
+    text-shadow: 0 1px #6E7E00;
+    width: 95%;
   }
 
 
