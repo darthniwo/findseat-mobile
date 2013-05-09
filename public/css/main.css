@@ -452,6 +452,8 @@ ul.ui-listview li span.rating{
   text-align: center;
   width: 100%;
   z-index: 10;
+  border-bottom: 1px solid #FFFFFF;
+  box-shadow: 0 1px #CCCCCC, inset -1px 0px 3px 2px rgba(0,0,0,0.15);
 }
 
 .title-header .movie{
@@ -722,7 +724,7 @@ ul.ui-listview.show .synopsis{
 #profile .ui-navbar.main-navbar{background: transparent;}
 #profile .ui-header{
   background:url('../img/backgrounds/profile-bg.jpg') no-repeat top center;
-  height:150px;
+  height:140px;
 }
 
 #profile .ui-header a{
@@ -745,7 +747,7 @@ ul.ui-listview.show .synopsis{
   margin: 0 auto;
   overflow: hidden;
   position: relative;
-  top: 30px;
+  top: 20px;
   width: 160px;
 }
 
@@ -782,7 +784,7 @@ ul.ui-listview.show .synopsis{
   color:#FFF;
   font-size: 22px;
   font-weight: 600;
-  margin-top:35px;
+  margin-top:30px;
   margin-bottom: 2px;
   text-align: center;
   text-shadow:0px 1px rgba(0,0,0,0.15);
