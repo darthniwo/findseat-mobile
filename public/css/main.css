@@ -1001,14 +1001,14 @@ ul.ui-listview.show .synopsis{
   border-top-color: #303949;
   border-width: 6px;
   left: 50%;
-  margin-left: -7px;
+  margin-left: -6px;
 }
 .arrow_box:before {
   border-color: rgba(39, 47, 58, 0);
   border-top-color: #303949;
-  border-width: 7px;
+  border-width: 8px;
   left: 50%;
-  margin-left: -7px;
+  margin-left: -8px;
 }
 
 /*=========================================================================
