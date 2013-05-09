@@ -549,8 +549,10 @@ ul.ui-listview.show .synopsis{
 
 #rsvp-screen{
   background-color:#000;
-  -webkit-filter: grayscale(0.5) blur(10px);
+/*  -webkit-filter: blur(40px);*/
 }
+
+.ui-popup-screen.in{opacity: 0.7;}
 
 #movie_comments{background-color:#F1F1F4;}
 
