@@ -125,7 +125,7 @@ body.landing{
 
 ul.tabs{
     background-color: #F1F1F4;
-    border-bottom: 1px solid #CCCCCC;
+    border-bottom: 1px solid #FFF;
     list-style-type: none;
     padding-bottom: 8px;
 }
@@ -344,7 +344,7 @@ ul.ui-listview li span.rating{
 }
 
 #tab-holder{
-    border-bottom: solid #FFF 1px;
+    border-bottom: solid #CCC 1px;
     height: 60px;
     position: fixed;
     width: 100%;
@@ -1001,14 +1001,14 @@ ul.ui-listview.show .synopsis{
   border-top-color: #303949;
   border-width: 6px;
   left: 50%;
-  margin-left: -8px;
+  margin-left: -7px;
 }
 .arrow_box:before {
   border-color: rgba(39, 47, 58, 0);
   border-top-color: #303949;
   border-width: 7px;
   left: 50%;
-  margin-left: -9px;
+  margin-left: -7px;
 }
 
 /*=========================================================================
