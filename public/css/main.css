@@ -992,7 +992,7 @@ ul.unstyled{
   position: absolute;
 }
 
-.date_show{
+.date-show{
   background-color: #F1F1F4;
   border-bottom:solid #CCC 1px;
   box-shadow:0px 1px #FFF;
@@ -1001,7 +1001,7 @@ ul.unstyled{
   z-index: 100;
 }
 
-.date_show a{
+.date-show a{
   color: #7F7F7F;
   display:block;
   font-size: 14px;
@@ -1009,7 +1009,7 @@ ul.unstyled{
   width: 90%;
 }
 
-.date_show i{
+.date-show i{
   top:15px;
   right:5px;
   position:absolute;
