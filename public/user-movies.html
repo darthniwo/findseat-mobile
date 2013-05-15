@@ -47,68 +47,32 @@
   </head>
   <body>
 
-      <div data-role="page" id="dashboard" class="show">
-        <div data-role="header" class="arrow_box unswipe" data-position="fixed" data-tap-toggle="false">
-          <div data-role="navbar"  class="main-navbar arrow_box">
-            <ul>
-                <li><a href="profile.html" class="" data-transition="slidedown" data-icon="user">Perfil</a></li>
-                <li><a href="#" class="" data-icon="ticket">Mis Peliculas</a></li>
-                <li><a href="#" class="" data-icon="friends">Contactos</a></li>
-                <li><a href="#" class="" data-icon="search">Buscar</a></li>
-            </ul>
+      <div data-role="page" id="profile" class="user-movies">
+        <div data-role="header" class="" data-position="fixed" data-tap-toggle="false">
+          <a href="" data-rel="back" data-role="none"><i class="findseat-icon-back"></i></a>
+          <div class="headline">Películas</div>
+          <a href="" data-role="none" data-transition="slide"><i class="findseat-icon-settings"></i></a>
+          <div class="searchbox">
+            <i class="findseat-icon-search"></i>
+            <input type="text" data-role="none">
           </div>
         </div>
         <div data-role="content" class="show">
-          <div class="title-header">
-            <div class="btn-holder left"><a data-rel="back" data-transition="slide" class="back"><i class="findseat-icon-arrow-left"></i></a></div>
-            <span class="movie">Django desencadenado</span>
-            <div class="btn-holder right"><a href="comments.html" data-transition="slide" class="comments"><span>3</span><i class="findseat-icon-bubble"></i></a></div>
-          </div>
-          <div class="img">
-            <span></span>
-            <img src="img/misc/movieclip.jpg" alt="movie name">
-          </div>
-          <ul data-role="listview" data-inset="true" class="show">
-            <li data-icon="custom">
-              <a href="synopsis.html" data-transition="flip">
-                <p>
-                  <span>Publico:</span> +12años <br>
-                  <span>Duración:</span> 1h 45min <br>
-                  <span>Director:</span> Quentin Tarantino <br>
-                  <span class="genre"><b>Genero:</b> Accion</span> <br>
-                  <span class="rating">7.4</span>
-                </p>
-                <span class="synopsis">
-                  <b>Sinopsis:</b> Set in the South two years before the Civil War, DJANGO UNCHAINED stars Academy...
-                </span>
-              </a>
-            </li>
-          </ul>
-          <div id="cines" class="show">
-              <ul data-role="listview" data-inset="true"> 
-                <li>
-                  <h2>Multicine Exito</h2>
-                  <span>Cra 51b #86-53, Barranquilla CO</span>
-                  <span><b>Telefono:</b> 53850185</span>
-                  <span><b><i class="findseat-icon-calendar"></i>Jueves 18 Diciembre</b></span>
-                  <span><b><i class="findseat-icon-time"></i>2:25pm, 5:30pm, 9:00pm</b></span>
-                  <span class="location">10k</span>
-                  <a class="show-movies red" href="#rsvp" data-rel="popup" data-position-to="window" data-transition="slideup" ><i class="findseat-icon-phone"></i> Reservar</a>
-                </li>
-              </ul>
-              <div data-role="popup" id="rsvp">
-                <a href="#" data-rel="back" data-iconpos="notext" class="ui-btn-right close">X</a>
-                <h2>Multicine Exito</h2>
-                <span>Cra 51b #86-53, Barranquilla CO</span>
-                <span><b>Telefono:</b> 53850185</span>
-                <span><b><i class="findseat-icon-calendar"></i>Jueves 18 Diciembre</b></span>
-                <span><b><i class="findseat-icon-time"></i>2:25pm, 5:30pm, 9:00pm</b></span>
-                <a class="call btn green" href="tel:3016750390" >Llamar</a>
-              </div>
-          </div>
-        </div>
-        <div data-role="footer">
+        <div class="no-movies">
+          <img src="img/misc/no-movies.png" alt="">
+        </div>  
           
+          
+        </div>
+        <div data-role="footer" data-position="fixed" data-tap-toggle="false">
+          <div data-role="navbar"  class="main-navbar">
+            <ul>
+                <li class="current"><a href="#" class="" data-icon="user">Perfil</a></li>
+                <li class=""><a href="#" class="" data-icon="ticket">Mis Peliculas</a></li>
+                <li class=""><a href="#" class="" data-icon="friends">Contactos</a></li>
+                <li class="last"><a href="#" class="" data-icon="search">Buscar</a></li>
+            </ul>
+          </div>
         </div>
 
       </div>  <!--end page -->
