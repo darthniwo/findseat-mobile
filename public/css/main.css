@@ -69,19 +69,20 @@ textarea {
    ========================================================================== */
 body{
   font-family: 'Open Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
 body.landing{
   /*background:#000 url('../img/backgrounds/body.jpg') no-repeat 0px -30px !important;*/
-  background:#000 url('../img/backgrounds/anim.gif') no-repeat top left;
-  background-size: 100%;
+  background:#000 url('../img/backgrounds/anim.gif') no-repeat top center;
+  background-size: 180% 100%;
 }
 
 /* Login - signup page*/
 
 .ui-page { -webkit-backface-visibility: hidden; } 
 .log-image{
-  margin:60px 0  50px 0;
+  margin:40px 0  50px 0;
   text-align: center;
 }
 
@@ -100,10 +101,10 @@ body.landing{
 .bottom-links{
   text-align: center;
   line-height: 2.6;
-  background-color:rgba(255,255,255,0.07);
-  -weblit-box-shadow:0px 0px 0px 4px rgba(255,255,255,0.07);
-  -moz-box-shadow:0px 0px 0px 4px rgba(255,255,255,0.07);
-  box-shadow:0px 0px 0px 4px rgba(255,255,255,0.07);
+  /*background-color:rgba(255,255,255,0.07);*/
+  -weblit-box-shadow:0px 0px 0px 2px rgba(255,255,255,0.07);
+  -moz-box-shadow:0px 0px 0px 2px rgba(255,255,255,0.07);
+  box-shadow:0px 0px 0px 2px rgba(255,255,255,0.07);
   border-radius:3px;
   margin:0 auto 18px;
   height:46px;
@@ -123,7 +124,10 @@ body.landing{
 /*#dashboard .arrow_box.unswipe{top:-59px;}*/  /*before swipedown*/
 
 ul.tabs{
-  list-style-type: none;
+    background-color: #F1F1F4;
+    border-bottom: 1px solid #FFF;
+    list-style-type: none;
+    padding-bottom: 8px;
 }
 
 ul.tabs li.active{
@@ -133,7 +137,7 @@ ul.tabs li.active{
 }
 
 ul.tabs li{
-  background-color: #CCC;
+  background-color: #DCDCDD;
   border-left: solid #FFF 1px;
   border-bottom: solid #FFF 1px;
 }
@@ -147,13 +151,18 @@ ul.tabs li a,
 }
 
 ul.tabs li a .ui-btn-text{
-  color:#AAA;
+  color: #C6C6C7;
   font-size: 22px;
-  text-shadow:1px 0px #FFF;
+  text-shadow: 1px 0 rgba(255, 255, 255, 0.5);
 }
 
 ul.tabs li.active a .ui-btn-text{
   color:#29313D;
+}
+
+ul.tabs li span.findseat-icon-location-grey{
+  position: relative;
+  top: 3px;
 }
 
 ul.ui-listview{
@@ -201,6 +210,7 @@ ul.ui-listview li span.rating{
   display:inline-block;
   height:13px;
   padding:2px 0px 2px 22px;
+  margin-top:3px;
 }
 
 .ui-li-thumb{
@@ -315,9 +325,15 @@ ul.ui-listview li span.rating{
 
 #cartelera ul.ui-listview li{}
 
-#cartelera ul.ui-listview li a{position:relative;transition: left 0.3s linear;}
-#cartelera ul.ui-listview li.trailer-open a{left:97px;}
-#cartelera ul.ui-listview li.trailer-open .trailer{opacity: 1;}
+#cartelera ul.ui-listview li a{
+  position:relative;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  left:0px;
+}
+#cartelera ul.ui-listview li.teaser a{left:97px;}
+#cartelera ul.ui-listview li.teaser .trailer{opacity: 1;}
 
 .trailer{
   background-color: #29313D;
@@ -334,7 +350,8 @@ ul.ui-listview li span.rating{
 }
 
 #tab-holder{
-    height: 50px;
+    border-bottom: solid #CCC 1px;
+    height: 58px;
     position: fixed;
     width: 100%;
     z-index: 10;
@@ -441,6 +458,8 @@ ul.ui-listview li span.rating{
   text-align: center;
   width: 100%;
   z-index: 10;
+  border-bottom: 1px solid #FFFFFF;
+  box-shadow: 0 1px #CCCCCC, inset -1px 0px 3px 2px rgba(0,0,0,0.15);
 }
 
 .title-header .movie{
@@ -483,6 +502,7 @@ ul.ui-listview.show .synopsis{
 }
 
 .btn-holder a span{
+  color:#A4441B;
   font-size: 11px;
   left: 0;
   margin: auto;
@@ -507,8 +527,8 @@ ul.ui-listview.show .synopsis{
 
 #rsvp-popup{
   left: 50% !important;
-  margin-left: -125px;
-  width: 250px;
+  margin-left: -115px;
+  width: 230px;
 }
 
 #rsvp{
@@ -546,9 +566,11 @@ ul.ui-listview.show .synopsis{
 }
 
 #rsvp-screen{
-  background-color:#FFF;
-  -webkit-filter: grayscale(0.5) blur(10px);
+  background-color:#000;
+/*  -webkit-filter: blur(40px);*/
 }
+
+.ui-popup-screen.in{opacity: 0.7;}
 
 #movie_comments{background-color:#F1F1F4;}
 
@@ -591,7 +613,8 @@ ul.ui-listview.show .synopsis{
   top: 0;
 }
 
-.comment-feed{
+.comment-feed,
+ul.unstyled{
   padding:0;
   list-style: none;
 }
@@ -708,7 +731,7 @@ ul.ui-listview.show .synopsis{
 #profile .ui-navbar.main-navbar{background: transparent;}
 #profile .ui-header{
   background:url('../img/backgrounds/profile-bg.jpg') no-repeat top center;
-  height:150px;
+  height:140px;
 }
 
 #profile .ui-header a{
@@ -716,6 +739,17 @@ ul.ui-listview.show .synopsis{
   font-size: 22px;
   text-decoration: none;
   margin:5px;
+}
+
+#profile .ui-header a i.findseat-icon-settings:after{
+  background-color: #3F2629;
+  border-radius: 50% 50% 50% 50%;
+  content: " ";
+  height: 4px;
+  left: 8px;
+  position: absolute;
+  top: 11px;
+  width: 4px;
 }
 
 #profile .ui-footer{
@@ -731,7 +765,7 @@ ul.ui-listview.show .synopsis{
   margin: 0 auto;
   overflow: hidden;
   position: relative;
-  top: 30px;
+  top: 20px;
   width: 160px;
 }
 
@@ -760,7 +794,7 @@ ul.ui-listview.show .synopsis{
   opacity: 0;
 }
 
-#profile .main-pic img{width:100%;}
+#profile .main-pic img{width:100%;border-radius: 50%;}
 
 .badges ul li{float:left;margin-bottom:10px;}
 
@@ -964,6 +998,50 @@ ul.ui-listview.show .synopsis{
   position: absolute;
 }
 
+.date-show{
+  background-color: #F1F1F4;
+  border-bottom:solid #CCC 1px;
+  box-shadow:0px 1px #FFF;
+  position: fixed;
+  width:100%;
+  z-index: 100;
+}
+
+.date-show a{
+  color: #7F7F7F;
+  display:block;
+  font-size: 14px;
+  padding:10px 5%;
+  width: 90%;
+}
+
+.date-show i{
+  top:15px;
+  right:5px;
+  position:absolute;
+}
+
+.theatre-show .movies{padding-top:25px;}
+
+.dates.unstyled{
+  margin:0;
+}
+
+.dates li{
+  border-bottom:solid #CCC 1px;
+  box-shadow: 0px 1px #FFF;
+  color:#818181;
+  font-size: 14px;
+  padding:15px;
+  text-shadow:1px 1px #FFF;
+}
+
+.dates li.headline{
+  font-weight: 600;
+  font-size: 20px;
+  padding:12px 15px;
+}
+
 /*=========================================================================
   Arrow box
 ===========================================================================*/
@@ -985,16 +1063,16 @@ ul.ui-listview.show .synopsis{
 .arrow_box:after {
   border-color: rgba(39, 47, 58, 0);
   border-top-color: #303949;
-  border-width: 10px;
+  border-width: 6px;
   left: 50%;
-  margin-left: -10px;
+  margin-left: -6px;
 }
 .arrow_box:before {
   border-color: rgba(39, 47, 58, 0);
   border-top-color: #303949;
-  border-width: 11px;
+  border-width: 8px;
   left: 50%;
-  margin-left: -11px;
+  margin-left: -8px;
 }
 
 /*=========================================================================
@@ -1019,7 +1097,7 @@ ul.ui-listview.show .synopsis{
 }*/
 
 .ui-icon-loading {
-  background: url('../img/icons/loadingx36.gif') no-repeat !important;
+  background: url('../img/icons/spinner.gif') no-repeat !important;
   border-radius: 0 !important;
   /*background-size: cover;*/
 }
@@ -1121,16 +1199,18 @@ li .ui-icon-custom{
   }
 
   .btn.green{
-    display:inline-block;
     background-color: #B2D153;
-    box-shadow: 0px 4px #6E7E00;
+    box-shadow: 0 2px #6E7E00;
+    color: #FFFFFF;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 10px 0 10px 5px;
+    padding: 7px 0;
     text-align: center;
-    color:#FFF;
-    text-shadow:0px 1px #6E7E00;
     text-decoration: none;
-    width: 100%;
-    margin-top:10px;
-    padding:5px 0;
+    text-shadow: 0 1px #6E7E00;
+    width: 95%;
   }
 
 
@@ -1280,7 +1360,7 @@ textarea[contenteditable] {
 
 .left{float:left;}
 .right{float:right;}
-.clear{clear:left;}}
+.clear{clear:left;}
 .clearall{clear:both;}
 .media{display:block;}
 .media .img{
@@ -1300,6 +1380,13 @@ textarea[contenteditable] {
 
 @media only screen and (min-width: 800px) {
     /* Style adjustments for viewports that meet the condition */
+
+}
+
+@media(max-width:600px){
+  body{
+      background-size:568px 320px;
+    }
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
