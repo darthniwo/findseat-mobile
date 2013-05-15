@@ -380,11 +380,13 @@ ul.ui-listview li span.rating{
 }
 
 #cines ul li .vendor{
-  background:url('../img/icons/findseat-icons/camera.svg') no-repeat left center;
-  background-size: auto 100%;
-  padding-left: 30px;
   font-weight: bold;
   margin-bottom:10px;
+}
+
+#cines ul li .vendor i{
+  font-size: 20px;
+  vertical-align: -3px;
 }
 
 #cines ul li .location{
@@ -423,11 +425,12 @@ ul.ui-listview li span.rating{
 }
 
 #cines ul .show-movies i{
-  float: left;
   left: 15px;
   position: absolute;
   top: 10px;
 }
+
+#cines ul .show-movies i.static{position: static;}
 
 #cines .ui-icon-arrow-r{display:none;}
 
@@ -705,10 +708,11 @@ ul.unstyled{
 
 #profile .ui-navbar.main-navbar li .ui-btn-inner{padding-bottom:7px;padding-top:10px;}
 
-#profile .ui-navbar.main-navbar li i{
+.ui-navbar.main-navbar li i{
   font-size: 14px;
   display: block;
   text-align: center;
+  margin-right:0;
 }
 
 #profile .ui-content{padding:15px 0;}
@@ -1042,7 +1046,18 @@ ul.unstyled{
   font-size: 14px;
   padding:15px;
   text-shadow:1px 1px #FFF;
+  position: relative;
 }
+
+.dates li i{
+  color:#F75946;
+  display:none;
+  font-size: 20px;
+  position: absolute;
+  right: 10px;
+}
+
+.dates li.current_date i{display:block;}
 
 .dates li.headline{
   font-weight: 600;
