@@ -73,9 +73,9 @@ body{
 }
 
 body.landing{
-  /*background:#000 url('../img/backgrounds/body.jpg') no-repeat 0px -30px !important;*/
-  background:#000 url('../img/backgrounds/anim.gif') no-repeat top left;
-  background-size: 100% 100%;
+  background:#000 url('../img/backgrounds/body.jpg') no-repeat center -30px !important;
+  /*background:#000 url('../img/backgrounds/anim.gif') no-repeat top center;
+  background-size: 180% 100%;*/
 }
 
 /* Login - signup page*/
@@ -121,7 +121,7 @@ body.landing{
 #dashboard .ui-content{padding:0;}
 
 .tab_content{padding-top:40px;}
-/*#dashboard .arrow_box.unswipe{top:-59px;}*/  /*before swipedown*/
+/*#dashboard .arrow_box.unswipe{top:-59px;} */ /*before swipedown*/
 
 ul.tabs{
     background-color: #F1F1F4;
@@ -325,9 +325,15 @@ ul.ui-listview li span.rating{
 
 #cartelera ul.ui-listview li{}
 
-#cartelera ul.ui-listview li a{position:relative;transition: left 0.3s linear;}
-#cartelera ul.ui-listview li.trailer-open a{left:97px;}
-#cartelera ul.ui-listview li.trailer-open .trailer{opacity: 1;}
+#cartelera ul.ui-listview li a{
+  position:relative;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  left:0px;
+}
+#cartelera ul.ui-listview li.teaser a{left:97px;}
+#cartelera ul.ui-listview li.teaser .trailer{opacity: 1;}
 
 .trailer{
   background-color: #29313D;
@@ -697,6 +703,14 @@ ul.unstyled{
   position:relative;
 }
 
+#profile .ui-navbar.main-navbar li .ui-btn-inner{padding-bottom:7px;padding-top:10px;}
+
+#profile .ui-navbar.main-navbar li i{
+  font-size: 14px;
+  display: block;
+  text-align: center;
+}
+
 #profile .ui-content{padding:15px 0;}
 
 #profile .ui-navbar.main-navbar li:after{
@@ -1036,6 +1050,26 @@ ul.unstyled{
   padding:12px 15px;
 }
 
+.user-movies .ui-header{
+  border-bottom:solid #1C2026 1px;
+  box-shadow: 0px 1px rgba(255,255,255,0.1);
+  height: 58px !important;
+}
+
+.no-movies{
+  height: 100px;
+  position: absolute;
+  right: 35px;
+  top: 40px;
+  width: 260px;
+  z-index: 100;
+}
+
+.no-movies img{
+  height:100%;
+  width:100%;
+}
+
 /*=========================================================================
   Arrow box
 ===========================================================================*/
@@ -1354,7 +1388,7 @@ textarea[contenteditable] {
 
 .left{float:left;}
 .right{float:right;}
-.clear{clear:left;}}
+.clear{clear:left;}
 .clearall{clear:both;}
 .media{display:block;}
 .media .img{
@@ -1365,6 +1399,8 @@ textarea[contenteditable] {
   overflow:hidden;
   margin-bottom:0;
 }
+
+.hidden{display:none;}
 
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.

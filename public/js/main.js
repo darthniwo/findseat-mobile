@@ -37,14 +37,15 @@ $(function(){
 	  	}
 	  });
 
-	  $('#cartelera ul.ui-listview li').on( 'swiperight', function(){
-	  	var self = $(this);
-	  	self.addClass('trailer-open');
-	  });
-	  $('#cartelera ul.ui-listview li').on( 'swipeleft', function(){
-	  	var self = $(this);
-	  	self.removeClass('trailer-open');
-	  });
+	  // $('#cartelera ul.ui-listview li').on( 'swiperight', function(){
+	  // 	var self = $(this);
+	  // 	self.addClass('teaser');
+	  // });
+	  // $('#cartelera ul.ui-listview li').on( 'swipeleft', function(){
+	  // 	var self = $(this);
+	  // 	self.removeClass('teaser');
+	  // });
+
 	  // if($('.tab-container').length > 0){
 	  // 	$('.tab-container').css('height', $(window).height() - 112);
 	  // }
