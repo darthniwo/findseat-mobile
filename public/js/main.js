@@ -29,12 +29,13 @@ $(function(){
 
 	  if($('#dashboard').length > 0){
 	  	$('.trigger').off('tap');
-	  	$('.trigger').on('tap', function(){
+	  	$('.trigger').on('tap', function(event){
 	  		console.log('tap');
 	  		$('#dashboard .ui-header').toggleClass('closed');
 				// $('#dashboard .ui-content').toggleClass('closed');
 				$('#dashboard .ui-header').toggleClass('open');
 				// $('#dashboard .ui-content').toggleClass('open');
+				event.stopPropagation()
 	  	});
 	  }
 
