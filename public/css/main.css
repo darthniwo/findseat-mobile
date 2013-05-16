@@ -126,12 +126,14 @@ body.landing{
 #dashboard .ui-header .trigger{
   background:url('../img/misc/menu-trigger.png') no-repeat top center;
   background-size:cover;
-  bottom:-17px;
+  bottom:-26px;
   height:42px;
   position:absolute;
   width:100%;
-  z-index: -1;
+  z-index: 2;
 }
+
+#dashboard .ui-header.open .trigger{z-index: -1;}
 
 #dashboard .ui-header,
 #dashboard .ui-content{
@@ -146,7 +148,7 @@ body.landing{
 #dashboard .ui-header.closed{top:-50px;}
 /*#dashboard .ui-content.closed{top:0px;}*/
 
-.tab_content{padding-top:40px;}
+.tab_content{padding-top:60px;}
 .show.tab_content.cines{padding-top:0;}
 /*#dashboard .arrow_box.unswipe{top:-59px;} */ /*before swipedown*/
 
@@ -311,6 +313,7 @@ ul.ui-listview li span.rating{
 }
 
 #dashboard .ui-navbar li a.ui-btn{
+  padding:5px 0;
   position: relative;
   top:4px;
 }
@@ -388,6 +391,7 @@ ul.ui-listview li span.rating{
     height: 58px;
     position: fixed;
     width: 100%;
+    top:25px;
     z-index: 10;
 }
 
