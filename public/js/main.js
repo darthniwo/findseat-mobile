@@ -47,9 +47,13 @@ $(function(){
 	  	$('.main-navbar li.current').prev().addClass('border-right');
 	  }
 
-	 if($(".touchslider").length > 0){
+	 if($(".slider").length > 0){
 	 		console.log('here');
-	  	//$(".touchslider").touchSlider();
+	  	$('.slider').flexslider({
+	  		touch:"true",
+	  		animation:"slide"
+
+	  	});
 	  }
 
 	  // $('.badges .show-badges').on('tap', function(){

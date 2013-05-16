@@ -523,7 +523,7 @@ ul.ui-listview.show .synopsis{
 }
 
 #cines.show ul{margin:0;}
-#cines.show ul li{height: 160px;}
+#cines.show ul li{height: 160px;width:281px !important;}
 
 .btn-holder{
   width: 40px;
@@ -1117,6 +1117,14 @@ ul.unstyled{
 .no-movies img{
   height:100%;
   width:100%;
+}
+
+.flex-direction-nav{display: none;}
+.flex-control-nav {
+    bottom: 0;
+    position: fixed;
+    text-align: center;
+    width: 100%;
 }
 
 /*=========================================================================
