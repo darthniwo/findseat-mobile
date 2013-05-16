@@ -306,7 +306,14 @@ ul.ui-listview li span.rating{
   overflow-y:scroll;
 }*/
 
-.ui-navbar li a.ui-btn{width:100%;}
+.ui-navbar li a.ui-btn{
+  width:100%;
+}
+
+#dashboard .ui-navbar li a.ui-btn{
+  position: relative;
+  top:4px;
+}
 
 .ui-navbar .ui-icon-billboard{
   background:url('../img/icons/findseat-icons/strip-grey.svg');
