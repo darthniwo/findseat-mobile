@@ -118,9 +118,34 @@ body.landing{
 }
 
 #dashboard{background-color: #F1F1F4;overflow-x:hidden;}
-#dashboard .ui-content{padding:0;}
+#dashboard .ui-content{
+  padding:0;
+  position: relative;
+}
+
+#dashboard .ui-header .trigger{
+  background:url('../img/misc/menu-trigger.png') no-repeat top center;
+  background-size:cover;
+  bottom:-15px;
+  height:42px;
+  position:absolute;
+  width:100%;
+  z-index: -1;
+}
+
+#dashboard .ui-header,
+#dashboard .ui-content{
+  transition:all .3s ease-in-out;
+}
+#dashboard .ui-header{top:-1px;}
+
+
+#dashboard .ui-content.open{top:55px;}
+#dashboard .ui-header.closed{top:-50px;}
+#dashboard .ui-content.closed{top:0px;}
 
 .tab_content{padding-top:40px;}
+.show.tab_content.cines{padding-top:0;}
 /*#dashboard .arrow_box.unswipe{top:-59px;} */ /*before swipedown*/
 
 ul.tabs{
@@ -357,14 +382,14 @@ ul.ui-listview li span.rating{
     z-index: 10;
 }
 
-#cines ul li{
+.tab_content.cines ul li{
   background-color:#29313D;
   border-bottom: 1px solid #1C2026;
   border-top: 1px solid #4C5566;
   height:140px;
   position:relative;
 }
-#cines ul li span{
+.tab_content.cines ul li span{
   color:#F1F1F4;
   display: block;
   font-size: 12px;
@@ -373,23 +398,23 @@ ul.ui-listview li span.rating{
   text-shadow:none;
 }
 
-#cines ul li h2{
+.tab_content.cines ul li h2{
   color:#F1F1F4;
   font-size: 20px;
   text-shadow:none;
 }
 
-#cines ul li .vendor{
+.tab_content.cines ul li .vendor{
   font-weight: bold;
   margin-bottom:10px;
 }
 
-#cines ul li .vendor i{
+.tab_content.cines ul li .vendor i{
   font-size: 20px;
   vertical-align: -3px;
 }
 
-#cines ul li .location{
+.tab_content.cines ul li .location{
   background:url('../img/icons/findseat-icons/marker.svg') no-repeat top left;
   background-size: auto 100%;
   font-weight: bold;
@@ -400,7 +425,7 @@ ul.ui-listview li span.rating{
   top: 10px; 
 }
 
-#cines ul li .location:before{
+.tab_content.cines ul li .location:before{
   content:" ";
   position:absolute;
   height:8px;
@@ -411,7 +436,7 @@ ul.ui-listview li span.rating{
   left:4px;
 }
 
-#cines ul li .show-movies{
+.tab_content.cines ul li .show-movies{
   border-radius: 3px 3px 3px 3px;
   color: #FFFFFF;
   display: block;
@@ -424,15 +449,15 @@ ul.ui-listview li span.rating{
   position: relative;
 }
 
-#cines ul .show-movies i{
+.tab_content.cines ul .show-movies i{
   left: 15px;
   position: absolute;
   top: 10px;
 }
 
-#cines ul .show-movies i.static{position: static;}
+.tab_content.cines ul .show-movies i.static{position: static;}
 
-#cines .ui-icon-arrow-r{display:none;}
+.tab_content.cines .ui-icon-arrow-r{display:none;}
 
 .show .img{
   height:98px;

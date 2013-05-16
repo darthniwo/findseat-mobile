@@ -1,8 +1,18 @@
 $(function(){
 
+	$(document).bind('pagechange', function(){
+		if($('.tab-container').length > 0){
+			console.log('detected');
+			$(".tab_content:first").show();
+		}else{
+			console.log('not detected');
+		}
+	});
+
 	$(document).bind('pageinit', function(){
 		console.log('works');
-	 	$(".tab_content").hide();
+	 	$(".tab_content:not(.show)").hide();
+	 	$("ul.tabs li").removeClass("active");
 	  $("ul.tabs li:first").addClass("active").show();
 	  $(".tab_content:first").show();
 
@@ -17,6 +27,18 @@ $(function(){
 		  return false;
 	  });
 
+	  if($('#dashboard').length > 0){
+	  	$('.trigger').off('tap');
+	  	$('.trigger').on('tap', function(){
+	  		console.log('tap');
+	  		$('#dashboard .ui-header').toggleClass('closed');
+				$('#dashboard .ui-content').toggleClass('closed');
+				$('#dashboard .ui-header').toggleClass('open');
+				$('#dashboard .ui-content').toggleClass('open');
+	  	});
+	  }
+
+
 	  if($('.main-navbar li.current').next().length > 0){
 	  	$('.main-navbar li.current').next().addClass('border-left');
 	  }
@@ -25,17 +47,22 @@ $(function(){
 	  	$('.main-navbar li.current').prev().addClass('border-right');
 	  }
 
-	  $('.badges .show-badges').on('tap', function(){
-	  	console.log('tap tap tap');
-	  	$('li.social-network').slideToggle();
-	  	$('.badges .hidden-badges').slideToggle();
-	  	$(this).toggleClass('open');
-	  	if($(this).hasClass('open')){
-	  		$(this).text('-');
-	  	}else{
-	  		$(this).text('+');
-	  	}
-	  });
+	 if($(".touchslider").length > 0){
+	 		console.log('here');
+	  	//$(".touchslider").touchSlider();
+	  }
+
+	  // $('.badges .show-badges').on('tap', function(){
+	  // 	console.log('tap tap tap');
+	  // 	$('li.social-network').slideToggle();
+	  // 	$('.badges .hidden-badges').slideToggle();
+	  // 	$(this).toggleClass('open');
+	  // 	if($(this).hasClass('open')){
+	  // 		$(this).text('-');
+	  // 	}else{
+	  // 		$(this).text('+');
+	  // 	}
+	  //});
 
 	  // $('#cartelera ul.ui-listview li').on( 'swiperight', function(){
 	  // 	var self = $(this);

@@ -48,7 +48,7 @@
   <body>
 
       <div data-role="page" id="dashboard">
-        <div data-role="header" class="arrow_box unswipe" data-position="fixed" data-tap-toggle="false">
+        <div data-role="header" class="closed" data-position="fixed" data-tap-toggle="false">
           <div data-role="navbar"  class="main-navbar">
             <ul>
                 <li class="current"><a href="profile.html" class=""><i class="findseat-icon-user"></i>Perfil</a></li>
@@ -57,8 +57,9 @@
                 <li class="last"><a href="#" class=""><i class="findseat-icon-search"></i>Buscar</a></li>
             </ul>
           </div>
+          <div class="trigger"></div>
         </div>
-        <div data-role="content">
+        <div data-role="content" class="closed">
           <div id="tab-holder" data-role="navbar" class="clearfix">
               <ul class="tabs">
                   <li><a href="#cartelera" class="ui-btn-active"><span class="findseat-icon-strip"></span>Películas</a></li>
@@ -130,7 +131,7 @@
                 </li>
               </ul>
             </div>
-            <div id="cines" class="tab_content">
+            <div id="cines" class="tab_content cines">
               <ul data-role="listview" data-inset="true"> 
                 <li>
                   <h2>Multicine Exito</h2>
