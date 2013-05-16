@@ -32,9 +32,9 @@ $(function(){
 	  	$('.trigger').on('tap', function(){
 	  		console.log('tap');
 	  		$('#dashboard .ui-header').toggleClass('closed');
-				$('#dashboard .ui-content').toggleClass('closed');
+				// $('#dashboard .ui-content').toggleClass('closed');
 				$('#dashboard .ui-header').toggleClass('open');
-				$('#dashboard .ui-content').toggleClass('open');
+				// $('#dashboard .ui-content').toggleClass('open');
 	  	});
 	  }
 
