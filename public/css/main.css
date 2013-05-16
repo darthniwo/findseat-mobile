@@ -145,10 +145,10 @@ body.landing{
 
 
 /*#dashboard .ui-content.open{top:55px;}*/
-#dashboard .ui-header.closed{top:-50px;}
+#dashboard .ui-header.closed{top:-55px;}
 /*#dashboard .ui-content.closed{top:0px;}*/
 
-.tab_content{padding-top:60px;}
+.tab_content{padding-top:57px;}
 .show.tab_content.cines{padding-top:0;}
 /*#dashboard .arrow_box.unswipe{top:-59px;} */ /*before swipedown*/
 
