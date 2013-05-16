@@ -126,7 +126,7 @@ body.landing{
 #dashboard .ui-header .trigger{
   background:url('../img/misc/menu-trigger.png') no-repeat top center;
   background-size:cover;
-  bottom:-15px;
+  bottom:-17px;
   height:42px;
   position:absolute;
   width:100%;
