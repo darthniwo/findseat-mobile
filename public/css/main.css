@@ -135,14 +135,16 @@ body.landing{
 
 #dashboard .ui-header,
 #dashboard .ui-content{
+  -webkit-transition:all .3s ease-in-out;
+  -moz-transition:all .3s ease-in-out;
   transition:all .3s ease-in-out;
 }
 #dashboard .ui-header{top:-1px;}
 
 
-#dashboard .ui-content.open{top:55px;}
+/*#dashboard .ui-content.open{top:55px;}*/
 #dashboard .ui-header.closed{top:-50px;}
-#dashboard .ui-content.closed{top:0px;}
+/*#dashboard .ui-content.closed{top:0px;}*/
 
 .tab_content{padding-top:40px;}
 .show.tab_content.cines{padding-top:0;}
