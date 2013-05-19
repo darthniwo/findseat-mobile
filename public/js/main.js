@@ -51,6 +51,8 @@ $(function(){
 	 if($(".slider").length > 0){
 	 		console.log('here');
 	  	$('.slider').flexslider({
+	  		itemWidth: 320,
+	  		itemMargin:10,
 	  		touch:"true",
 	  		animation:"slide"
 
