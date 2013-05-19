@@ -35,7 +35,7 @@ $(function(){
 				// $('#dashboard .ui-content').toggleClass('closed');
 				$('#dashboard .ui-header').toggleClass('open');
 				// $('#dashboard .ui-content').toggleClass('open');
-				event.stopPropagation()
+				
 	  	});
 	  }
 
