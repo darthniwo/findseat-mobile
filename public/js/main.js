@@ -52,7 +52,7 @@ $(function(){
 	 		console.log('here');
 	  	$('.slider').flexslider({
 	  		itemWidth: 320,
-	  		itemMargin:10,
+	  		animationLoop: 'false',
 	  		touch:"true",
 	  		animation:"slide"
 

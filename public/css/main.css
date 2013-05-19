@@ -526,8 +526,10 @@ ul.ui-listview.show .synopsis{
   white-space: normal;
 }
 
+ul.slides{background-color:#29313D;}
+.flex-viewport{width: 320px;}
 #cines.show ul{margin:0;}
-#cines.show ul li{height: 160px;width:281px !important;}
+#cines.show ul li{height: 160px;width:281px !important;margin-right:15px;}
 
 .btn-holder{
   width: 40px;
