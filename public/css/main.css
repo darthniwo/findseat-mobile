@@ -251,10 +251,11 @@ ul.ui-listview li span.rating{
 .ui-li-heading{
   color:#828282;
   font-size: 20px;
-  
+  text-align: left !important; 
   margin:0 0 5px 0;
   overflow: visible;
   white-space: normal !important;
+  margin-top: 0px !important;
 }
 
 .ui-header .ui-navbar a.ui-btn,
@@ -971,6 +972,32 @@ ul.unstyled{
   position:relative;
 }
 
+#profile ul.ui-listview {
+  border: 0 none;
+}
+
+#profile ul.ui-listview li:first-child{border-top:0 none;}
+#profile ul.ui-listview li:last-child{border-bottom:0 none;}
+#profile .movies ul.ui-listview span.ui-icon{display:none;}
+#profile ul.ui-listview li{
+  background-color: #2E3746;
+  border-bottom: 1px solid #1C2026;
+  border-top: 1px solid #4C5566;
+}
+#profile ul.ui-listview li, 
+#profile ul.ui-listview li span, 
+#profile ul.ui-listview li a{
+  color:#FFF;text-shadow:0px 1px #000;
+}
+
+#profile ul.ui-listview li i{
+  color: #171D24;
+  font-size: 12px;
+  position: absolute;
+  right: 0;
+  text-shadow:0px 1px rgba(255,255,255,0.16);
+}
+
 .ui-header, .ui-footer{z-index: 100;}
 
 .ui-content.settings{padding-top:40px !important;}
@@ -1118,6 +1145,10 @@ ul.unstyled{
   height: 58px !important;
 }
 
+.user-movies .ui-header a{
+  top:10px;
+}
+
 .no-movies{
   height: 100px;
   position: absolute;
@@ -1139,6 +1170,79 @@ ul.unstyled{
     text-align: center;
     width: 100%;
 }
+
+.searchbox{
+  background-color: rgba(255, 255, 255, 0.58);
+  /*background-color: #B4ABAB;*/
+  -weblit-box-shadow:0px 0px 0px 4px rgba(255,255,255,0.15);
+  -moz-box-shadow:0px 0px 0px 4px rgba(255,255,255,0.15);
+  box-shadow:0px 0px 0px 4px rgba(255,255,255,0.15);
+  border-radius: 4px;
+  float: right;
+  height: 25px;
+  margin:10px 6% 0 0;
+  padding: 5px 0;
+  position: relative;
+  width: 76%;
+}
+
+.searchbox input{
+  border:0 none;
+  float: right;
+  background:transparent;
+  color: #FFF;
+  text-shadow:0px 1px rgba(0,0,0,0.5); 
+  width:86%;
+}
+
+.searchbox i{
+  color:#FFF;
+  float:left;
+  font-weight: 700;
+  margin:5px 0 0 10px;
+  text-shadow:0px 1px rgba(0,0,0,0.5);
+}
+
+
+.searchbox ::-webkit-input-placeholder {
+   color: #FFF;
+   text-shadow:0px 1px rgba(0,0,0,0.5); 
+}
+
+.searchbox :-moz-placeholder { /* Firefox 18- */
+   color: #FFF;
+   text-shadow:0px 1px rgba(0,0,0,0.5);  
+}
+
+.searchbox ::-moz-placeholder {  /* Firefox 19+ */
+   color: #FFF;
+   text-shadow:0px 1px rgba(0,0,0,0.5);  
+}
+
+.searchbox :-ms-input-placeholder {  
+   color: #FFF;
+   text-shadow:0px 1px rgba(0,0,0,0.5);  
+}
+
+div.headline{
+  color:#FFF;
+  font-size: 20px;
+  font-style: italic;
+  margin-top:10px;
+  text-align: center;
+}
+
+div.headline .count{margin-right:5px;font-style: normal; }
+
+div.headline .count i{
+  font-size:34px;
+  margin-right: 0;
+  vertical-align: middle;
+}
+div.headline .count i:first-child{margin-right:-8px;}
+div.headline .count i:last-child{margin-left:-8px;}
+
+.movie-list a.ui-btn{width:auto;}
 
 /*=========================================================================
   Arrow box

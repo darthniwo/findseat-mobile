@@ -50,88 +50,30 @@
       <div data-role="page" id="profile" class="user-movies">
         <div data-role="header" class="" data-position="fixed" data-tap-toggle="false">
           <a href="" data-rel="back" data-role="none"><i class="findseat-icon-back"></i></a>
-          <div class="headline"> 
-            <span class="count">
-              <i class="findseat-icon-left-oath tol"></i>
-              <b>800</b>
-              <i class="findseat-icon-right-oath tor"></i>
-            </span>
-            Películas
-          </div>
-          <a href="movie-search.html" data-role="none" data-transition="slide"><i class="findseat-icon-add"></i></a>
-          <!-- <div class="searchbox">
+          
+          <div class="searchbox">
             <i class="findseat-icon-search"></i>
-            <input type="text" data-role="none">
-          </div> -->
+            <input type="text" data-role="none" placeholder="Buscar películas...">
+          </div>
         </div>
         <div data-role="content" class="show">
-          <div class="no-movies hidden">
-            <img src="img/misc/no-movies.png" alt="">
-          </div>  
-          <div class="movies">
-            <ul data-role="listview" data-inset="true">
-              <li data-icon="custom">
-                <i class="findseat-icon-arrow-right"></i>
-                <span class="trailer"></span>
-                <a href="#" data-transition="slide">
-                  <img src="img/misc/poster-sample1.jpg">
-                  <h2>Django Desencadenado</h2>
-                  <p>
-                    <span>Publico:</span> +12años <br>
-                    <span>Duración:</span> 1h 45min <br>
-                    <span>Director:</span> Quentin Tarantino <br>
-                    <span class="genre"><b>Genero:</b> Accion</span> <br>
-                    <span class="rating">7.4</span>
-                  </p>
-                </a>
-              </li>
-              <li data-icon="custom">
-                <i class="findseat-icon-arrow-right"></i>
-                <span class="trailer"></span>
-                <a href="#">
-                  <img src="img/misc/poster-sample2.jpg">
-                  <h2>Chasing Mavericks</h2>
-                  <p>
-                    <span>Publico:</span> +12años <br>
-                    <span>Duración:</span> 1h 45min <br>
-                    <span>Director:</span> Pablo Lastra <br>
-                    <span class="genre"><b>Genero:</b> Suspenso</span> <br>
-                    <span class="rating">7.4</span>
-                  </p>
-                </a>
-              </li>
-              <li data-icon="custom">
-                <i class="findseat-icon-arrow-right"></i>
-                <span class="trailer"></span>
-                <a href="#">
-                  <img src="img/misc/poster-sample1.jpg">
-                  <h2>Django Desencadenado</h2>
-                  <p>
-                    <span>Publico:</span> +12años <br>
-                    <span>Duración:</span> 1h 45min <br>
-                    <span>Director:</span> Quentin Tarantino <br>
-                    <span class="genre"><b>Genero:</b> Drama</span> <br>
-                    <span class="rating">7.4</span>
-                  </p>
-                </a>
-              </li>
-              <li data-icon="custom">
-                <i class="findseat-icon-arrow-right"></i>
-                <span class="trailer"></span>
-                <a href="#">
-                  <img src="img/misc/poster-sample2.jpg">
-                  <h2>Django Desencadenado</h2>
-                  <p>
-                    <span>Publico:</span> +12años <br>
-                    <span>Duración:</span> 1h 45min <br>
-                    <span>Director:</span> Quentin Tarantino <br>
-                    <span class="genre"><b>Genero:</b> Ciencia Ficcion</span> <br>
-                    <span class="rating">7.4</span>
-                  </p>
-                </a>
-              </li>
-            </ul>
-          </div>
+        <div class="no-movies hidden">
+          <img src="img/misc/no-movies.png" alt="">
+        </div>  
+         <div class="movie-list">
+           <ul>
+             <li>
+               <a href="javascript:;">Django Unchained</a>
+               <i class="findseat-icon-arrow-right"></i>
+               <div class="action">
+                 <div data-role="controlgroup" data-type="horizontal">
+                    <a href="#" data-role="button"><i class="findseat-icon-add"></i>Yes</a>
+                    <a href="#" data-role="button"><i class="findseat-icon-menu"></i>No</a>
+                </div>
+               </div>
+             </li>
+           </ul>
+         </div> 
           
         </div>
         <div data-role="footer" data-position="fixed" data-tap-toggle="false">
