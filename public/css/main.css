@@ -588,15 +588,15 @@ ul.slides{background-color:#29313D;}
 
 #rsvp .close,
 .ui-popup .close{
-  background-color: #888888;
-  border-radius: 50%;
-  color: #FFFFFF;
+  color: #888;
   font-weight: bold;
+  font-size: 20px;
   padding: 2px 7px;
-  right: 10px;
+  right: 0px;
   text-align: center;
   text-decoration: none;
   top: 5px;
+  position: absolute;
 }
 
 #rsvp  h2,
@@ -894,6 +894,7 @@ ul.unstyled{
 #profile .views,
 #profile .views a{
   color:#FFF;
+  display:block;
   font-size: 15px;
   font-weight: 300;
   font-style: italic;
@@ -1099,6 +1100,7 @@ ul.unstyled{
   display:none;
   font-size: 20px;
   position: absolute;
+  top:15px;
   right: 10px;
 }
 

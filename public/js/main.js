@@ -39,6 +39,10 @@ $(function(){
 	  	});
 	  }
 
+	  $('.dates li:not(.headline)').on('tap', function(){
+	  	$('.dates li.current_date').removeClass('current_date');
+	  	$(this).addClass('current_date');
+	  });
 
 	  if($('.main-navbar li.current').next().length > 0){
 	  	$('.main-navbar li.current').next().addClass('border-left');
