@@ -153,7 +153,7 @@ body.landing{
 /*#dashboard .arrow_box.unswipe{top:-59px;} */ /*before swipedown*/
 
 #menu{
-  width: 80%;
+  width: 84%;
 }
 
 #menu-trigger{
@@ -172,6 +172,10 @@ body.landing{
   width: 20px;
   position: relative;
   top:10px;
+}
+
+.ui-panel-animate.ui-panel-content-fixed-toolbar-position-left.ui-panel-content-fixed-toolbar-open.ui-panel-content-fixed-toolbar-display-reveal, .ui-panel-animate.ui-panel-content-fixed-toolbar-position-left.ui-panel-content-fixed-toolbar-open.ui-panel-content-fixed-toolbar-display-push, .ui-panel-animate.ui-panel-content-wrap-position-left.ui-panel-content-wrap-open.ui-panel-content-wrap-display-reveal, .ui-panel-animate.ui-panel-content-wrap-position-left.ui-panel-content-wrap-open.ui-panel-content-wrap-display-push{
+  transform: translate3d(16em, 0px, 0px);
 }
 
 ul.tabs{
