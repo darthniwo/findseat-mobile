@@ -141,7 +141,7 @@ body.landing{
   -moz-transition:all .3s ease-in-out;
   transition:all .3s ease-in-out;
 }
-#dashboard .ui-header{top:-1px;}
+#dashboard .ui-header{top:-1px;z-index: 1000;}
 
 
 /*#dashboard .ui-content.open{top:55px;}*/
@@ -156,6 +156,11 @@ body.landing{
   background-color: #242B36;
 }
 
+.menu-holder{
+  min-height: 320px;
+  max-height: 568px;
+}
+
 #menu-trigger{
   background-color: #242B36;
   box-shadow: none;
@@ -165,6 +170,7 @@ body.landing{
   text-align: center;
   position: relative;
   width: 20%; 
+  z-index: 10000;
 }
 
 .ui-panel-inner{padding:0;}
