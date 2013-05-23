@@ -167,7 +167,7 @@ body.landing{
   box-shadow: none;
   border-radius: 0 0 0 0;
   float: left;
-  height:55px !important;
+  height:51px !important;
   text-align: center;
   position: relative;
   width: 20%; 
@@ -182,7 +182,7 @@ body.landing{
   height:30px;
   width: 30px;
   position: relative;
-  top:10px;
+  top:6px;
 }
 
 #menu-trigger.panel-open i{
