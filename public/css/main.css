@@ -148,15 +148,39 @@ body.landing{
 #dashboard .ui-header.closed{top:-55px;}
 /*#dashboard .ui-content.closed{top:0px;}*/
 
-.tab_content{padding-top:57px;}
+.tab_content{padding-top:42px;}
 .show.tab_content.cines{padding-top:0;}
 /*#dashboard .arrow_box.unswipe{top:-59px;} */ /*before swipedown*/
+
+#menu{
+  width: 80%;
+}
+
+#menu-trigger{
+  background-color: #29313D;
+  border-radius: 0 0 0 0;
+  float: left;
+  height:57px;
+  text-align: center;
+  position: relative;
+  width: 20%; 
+}
+#menu-trigger i{
+  display: :block;
+  font-size: 25px;
+  height:20px;
+  width: 20px;
+  position: relative;
+  top:10px;
+}
 
 ul.tabs{
     background-color: #F1F1F4;
     border-bottom: 1px solid #FFF;
     list-style-type: none;
-    padding-bottom: 8px;
+    padding-bottom: 6px;
+    float:left;
+    width: 80%;
 }
 
 ul.tabs li.active{
@@ -314,9 +338,9 @@ ul.ui-listview li span.rating{
 }
 
 #dashboard .ui-navbar li a.ui-btn{
-  padding:5px 0;
+  padding:0;
   position: relative;
-  top:4px;
+  top:0px;
 }
 
 .ui-navbar .ui-icon-billboard{
@@ -392,7 +416,7 @@ ul.ui-listview li span.rating{
     height: 58px;
     position: fixed;
     width: 100%;
-    top:16px;
+    top:0px;
     z-index: 10;
 }
 

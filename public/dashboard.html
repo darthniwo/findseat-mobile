@@ -49,22 +49,31 @@
   <body>
 
       <div data-role="page" id="dashboard">
-        <div data-role="header" class="closed" data-position="fixed" data-tap-toggle="false">
-          <div data-role="navbar"  class="main-navbar">
+        <!--<div data-role="header" class="closed" data-position="fixed" data-tap-toggle="false">
+           <div data-role="navbar"  class="main-navbar">
             <ul>
                 <li class="current"><a href="profile.html" class="" data-transition="slidedown"><i class="findseat-icon-user"></i>Perfil</a></li>
                 <li class=""><a href="#" class=""><i class="findseat-icon-ticket"></i>Reservas</a></li>
                 <li class=""><a href="#" class=""><i class="findseat-icon-at"></i>Contactos</a></li>
                 <li class="last"><a href="#" class=""><i class="findseat-icon-search"></i>Buscar</a></li>
             </ul>
-          </div>
+          </div> 
           <div class="trigger"></div>
-        </div>
+        </div>-->
+
+        <div data-role="panel" id="menu" data-display="push">
+            <!-- panel content goes here -->
+            panel content
+            panel content
+            panel content
+        </div><!-- /panel -->
+        
         <div data-role="content" class="closed">
           <div id="tab-holder" data-role="navbar" class="clearfix">
+              <a id="menu-trigger" data-role="none" href="#menu"><i class="findseat-icon-plus"></i></a>
               <ul class="tabs">
-                  <li><a href="#cartelera" class="ui-btn-active"><span class="findseat-icon-strip"></span>Películas</a></li>
-                  <li><a href="#cines"><span class="alone findseat-icon-location"></span>Cines</a></li>
+                  <li><a href="#cartelera" class="ui-btn-active">Películas</a></li>
+                  <li><a href="#cines">Cines</a></li>
               </ul>
           </div><!-- /navbar -->
           <!--ul class="tabs clearfix">
