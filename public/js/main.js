@@ -39,6 +39,16 @@ $(function(){
 	  	});
 	  }
 
+	  $('#menu').on('panelopen', function(){
+	  	$('#menu-trigger').addClass('panel-open');
+	  	console.log('panel-open');
+	  });
+
+	  $('#menu').on('panelclose', function(){
+	  	$('#menu-trigger').removeClass('panel-open');
+	  	console.log('panel-closed');
+	  });
+
 	  $('.dates li:not(.headline)').on('tap', function(){
 	  	$('.dates li.current_date').removeClass('current_date');
 	  	$(this).addClass('current_date');
