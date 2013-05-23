@@ -167,7 +167,7 @@ body.landing{
   box-shadow: none;
   border-radius: 0 0 0 0;
   float: left;
-  height:63px !important;
+  height:55px !important;
   text-align: center;
   position: relative;
   width: 20%; 
@@ -208,7 +208,6 @@ body.landing{
 
 ul.tabs{
     background-color: #F1F1F4;
-    border-bottom: 1px solid #CCC;
     list-style-type: none;
     padding-bottom: 9px;
     float:left;
@@ -450,6 +449,7 @@ ul.ui-listview li span.rating{
 
 #tab-holder{
   background-color: #F1F1F4;
+  box-shadow: 0px 1px #ccc;
   border-bottom: solid #FFF 1px;
   height: 60px;
   position: fixed;
