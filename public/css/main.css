@@ -197,12 +197,31 @@ body.landing{
 .user-menu.bottom{position: fixed;bottom: 0;}
 .user-menu.no-border li{border:0 none;box-shadow: none;}
 
-.user-menu a{color:#FFF;font-size: 18px;}
+.user-menu a{
+  color:#FFF;
+  display:block;
+  font-size: 18px;
+}
 
 .user-menu li{
   border-bottom:solid 1px #181D24;
   box-shadow: 0px 1px #343F4F;
   padding:15px 0px 15px 15px;
+  position: relative;
+}
+
+.user-menu li .count{
+  background-color: #1C212A;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  border-radius: 7px;
+  color: #F75946;
+  font-size: 18px;
+  font-weight: 600;
+  padding:3px 12px;
+  position: absolute;
+  right:17%;
+  top:14px;
 }
 
 .user-menu li.current a{color:#F75946;}

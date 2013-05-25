@@ -7,14 +7,7 @@
     <meta name="description" content="">
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
-    <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
-    <!-- standard viewport tag to set the viewport to the device's width
-    , Android 2.3 devices need this so 100% width works properly and
-    doesn't allow children to blow up the viewport width
-    <meta name="viewport" id="vp" content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width" />-->
-    <!-- width=device-width causes the iPhone 5 to letterbox the app, so
-    we want to exclude it for iPhone 5 to allow full screen apps 
-    <meta name="viewport" id="vp" content="initial-scale=1.0,user-scalable=no,maximum-scale=1" media="(device-height: 568px)" />-->
+
     <meta name="viewport" content="user-scalable=0, initial-scale=1.0, maximum-scale=1.0">
 
     <meta http-equiv="cleartype" content="on">
@@ -29,7 +22,7 @@
     <meta name="msapplication-TileImage" content="img/touch/apple-touch-icon-144x144-precomposed.png">
     <meta name="msapplication-TileColor" content="#222222">
 
-    <!-- startup image -->
+
     <link href="img/startup/startup-retina-4in.png" rel="apple-touch-startup-image" media="(device-height: 568px)">
     <link href="img/startup/startup-retina.png" rel="apple-touch-startup-image" sizes="640x920" media="(device-height: 480px)">
     
@@ -53,27 +46,154 @@
     <link rel="stylesheet" href="css/main.css">
     <script src="js/vendor/modernizr-2.6.2.min.js"></script>
   </head>
-  <body class="landing">
-      <!-- Add your site or application content here -->
-      <div data-role="page" id="login-splash">
-        <div data-role="header"></div>
-        <div data-role="content">
-          <h1 class="log-image">
-            <img src="img/logo.png">
-          </h1>
+  <body>
+
+      <div data-role="page" id="dashboard">
+        <div data-role="header" class="" data-position="fixed" data-tap-toggle="false">
+          <!-- <div data-role="navbar"  class="main-navbar">
+            <ul>
+                <li class="current"><a href="profile.html" class="" data-transition="slidedown"><i class="findseat-icon-user"></i>Perfil</a></li>
+                <li class=""><a href="#" class=""><i class="findseat-icon-ticket"></i>Reservas</a></li>
+                <li class=""><a href="#" class=""><i class="findseat-icon-at"></i>Contactos</a></li>
+                <li class="last"><a href="#" class=""><i class="findseat-icon-search"></i>Buscar</a></li>
+            </ul>
+          </div> 
+          <div class="trigger"></div>-->
+          <div id="tab-holder" data-role="navbar" class="clearfix">
+              <a id="menu-trigger" data-role="none" href="#menu"><i class="findseat-icon-plus"></i></a>
+              <ul class="tabs">
+                  <li><a href="#cartelera" class="ui-btn-active">Películas</a></li>
+                  <li><a href="#cines">Cines</a></li>
+              </ul>
+          </div><!-- /navbar -->
+        </div>
+
+        <div data-role="panel" id="menu" data-display="reveal" data-position-fixed="true">
+            <!-- panel content goes here -->
+            <ul class="unstyled user-menu">
+              <li class="current"><a href="#"><i class="findseat-icon-house"></i> Home</a></li>
+              <li><a href="profile.html"><i class="findseat-icon-user"></i> Perfil</a></li>
+              <li><a href="javascript:;"><i class="findseat-icon-ticket"></i> Reservas <span class="count">3</span></a></li>
+              <li><a href="javascript:;"><i class="findseat-icon-at"></i>Contactos</a></li>
+              <li><a href="javascript:;"><i class="findseat-icon-search"></i>Buscar</a></li>
+              <li><a href=""><i class="findseat-icon-settings"></i>Configuración</a></li>
+            </ul>
+            <!-- <ul class="user-menu no-border unstyled bottom">
+              
+            </ul> -->
+        </div><!-- /panel -->
+        
+        <div data-role="content" class="closed">
           
-          <div class="log-in">
-            <a href="dashboard.html" data-transition="slidedown" data-inline="true"><img src="img/misc/fb-connect.png" alt=""></a>
-            <a href=""><img src="img/misc/twt-connect.png" alt=""></a>
-            <a href="oldlogin.html" data-role="button" data-theme="transparent" data-icon="reload" data-iconpos="bottom" data-transition="flip" data-inline="true">Conectarse de la forma antigua</a>
+          <!--ul class="tabs clearfix">
+            <li><a class="" href="#cartelera"><span></span> Cartelera</a></li>
+            <li><a href="#cines"><span></span> Cines</a></li>
+          </ul-->
+          <div class="tab-container clear">
+            <div id="cartelera" class="tab_content">
+              <ul data-role="listview" data-inset="true">
+                <li data-icon="custom">
+                  <span class="trailer">Trailer dude</span>
+                  <a href="movie_show.html" data-transition="slide">
+                    <img src="img/misc/poster-sample1.jpg">
+                    <h2>Django Desencadenado</h2>
+                    <p>
+                      <span>Publico:</span> +12años <br>
+                      <span>Duración:</span> 1h 45min <br>
+                      <span>Director:</span> Quentin Tarantino <br>
+                      <span class="genre"><b>Genero:</b> Accion</span> <br>
+                      <span class="rating">7.4</span>
+                    </p>
+                  </a>
+                </li>
+                <li data-icon="custom">
+                  <span class="trailer"></span>
+                  <a href="#">
+                    <img src="img/misc/poster-sample2.jpg">
+                    <h2>Chasing Mavericks</h2>
+                    <p>
+                      <span>Publico:</span> +12años <br>
+                      <span>Duración:</span> 1h 45min <br>
+                      <span>Director:</span> Pablo Lastra <br>
+                      <span class="genre"><b>Genero:</b> Suspenso</span> <br>
+                      <span class="rating">7.4</span>
+                    </p>
+                  </a>
+                </li>
+                <li data-icon="custom">
+                  <span class="trailer"></span>
+                  <a href="#">
+                    <img src="img/misc/poster-sample1.jpg">
+                    <h2>Django Desencadenado</h2>
+                    <p>
+                      <span>Publico:</span> +12años <br>
+                      <span>Duración:</span> 1h 45min <br>
+                      <span>Director:</span> Quentin Tarantino <br>
+                      <span class="genre"><b>Genero:</b> Drama</span> <br>
+                      <span class="rating">7.4</span>
+                    </p>
+                  </a>
+                </li>
+                <li data-icon="custom">
+                  <span class="trailer"></span>
+                  <a href="#">
+                    <img src="img/misc/poster-sample2.jpg">
+                    <h2>Django Desencadenado</h2>
+                    <p>
+                      <span>Publico:</span> +12años <br>
+                      <span>Duración:</span> 1h 45min <br>
+                      <span>Director:</span> Quentin Tarantino <br>
+                      <span class="genre"><b>Genero:</b> Ciencia Ficcion</span> <br>
+                      <span class="rating">7.4</span>
+                    </p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div id="cines" class="tab_content cines">
+              <ul data-role="listview" data-inset="true"> 
+                <li>
+                  <h2>Multicine Exito</h2>
+                  <span>Cra 51b #86-53, Barranquilla CO</span>
+                  <span>Telefono: 53850185</span>
+                  <span class="vendor"><i class="findseat-icon-camera"></i> Royal Films</span>
+                  <span class="location">10K</span>
+                  <a class="show-movies red" href="theater_show.html" data-transition="slide"><i class="findseat-icon-strip static"></i>Ver Cartelera</a>
+                </li>
+                <li>
+                  <h2>Buenavista</h2>
+                  <span>Calle 96 #52-11, Barranquilla CO</span>
+                  <span>Telefono: 53850185</span>
+                 <span class="vendor"><i class="findseat-icon-camera"></i> CineColombia</span>
+                  <span class="location">15K</span>
+                  <a class="show-movies red" href=""><i class="findseat-icon-strip static"></i>Ver Cartelera</a>
+                </li>
+                <li>
+                  <h2>Carrefour Americano</h2>
+                  <span>Cra 38 #86-53, Barranquilla CO</span>
+                  <span>Telefono: 53850185</span>
+                  <span class="vendor"><i class="findseat-icon-camera"></i> Cineland</span>
+                  <span class="location">5K</span>
+                  <a class="show-movies red" href=""><i class="findseat-icon-strip static"></i>Ver Cartelera</a>
+                </li>
+                <li>
+                  <h2>Cineland Panorama</h2>
+                  <span>Cll 30 #8-53, Barranquilla CO</span>
+                  <span>Telefono: 53850185</span>
+                  <span class="vendor"><i class="findseat-icon-camera"></i> Cineland</span>
+                  <span class="location">20K</span>
+                  <a class="show-movies red" href=""><i class="findseat-icon-strip static"></i>Ver Cartelera</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div data-role="footer">
+          <div id="log">
+            
           </div>
         </div>
 
-        <div data-role="footer">
-          <div class="bottom-links">
-            <a href="javascript:;">Terminos y Condiciones</a>
-          </div>
-        </div>
       </div>  <!--end page -->
       
       <!-- jQuery mobile -->
@@ -87,12 +207,12 @@
       <script src="js/main.js"></script>
       <script src="js/vendor/jquery.mobile-1.3.1.min.js"></script>
 
-      <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+      <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. 
       <script>
           var _gaq=[["_setAccount","UA-XXXXX-X"],["_trackPageview"]];
           (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
           g.src=("https:"==location.protocol?"//ssl":"//www")+".google-analytics.com/ga.js";
           s.parentNode.insertBefore(g,s)}(document,"script"));
-      </script>
+      </script>-->
   </body>
 </html>
