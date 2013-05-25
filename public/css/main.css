@@ -112,6 +112,8 @@ body.landing{
   color: #FFF;
 }
 
+.bottom-links span{color:#DE4D39;}
+
 #dashboard{background-color: #F1F1F4;overflow-x:hidden;padding-top:61px !important;}
 #dashboard.no-padding{padding-top:0 !important;}
 #dashboard .ui-content{
@@ -1335,7 +1337,7 @@ div.headline .count i:last-child{margin-left:-8px;}
   display:block;
   position: fixed;
   z-index: 99999;
-  top:0;
+  /*top:0;*/
   left:0;
 }
 
@@ -1351,6 +1353,30 @@ div.headline .count i:last-child{margin-left:-8px;}
 
 .landscape .bottom-links{width:auto;}
 
+.landscape #overlay2 .bottom-links{
+  bottom: 50px;
+  left: 40px;
+}
+
+.landscape #overlay2 .bottom-links span{display:none;}
+.landscape #overlay2 .bottom-links a{display: block;}
+
+.landscape .signup-form{
+  float: right;  
+  margin-top: 10px;
+  width: 60%;
+}
+
+.overlayed-content a.action-btn.link{
+  color:#FFF;
+  font-size: 25px;
+  position: absolute;
+  top:10px;
+  left:10px;
+}
+.overlay-form{
+  display:none;
+}
 
 /*=========================================================================
   Arrow box
@@ -1572,9 +1598,6 @@ li .ui-icon-custom{
   }
   .text-field{
     background-color:#FFF;
-    -weblit-box-shadow:0px 0px 0px 4px rgba(255,255,255,0.15);
-    -moz-box-shadow:0px 0px 0px 4px rgba(255,255,255,0.15);
-    box-shadow:0px 0px 0px 4px rgba(255,255,255,0.15);
     border-radius:3px;
     height: 46px;
     margin:0 auto 18px;

@@ -67,7 +67,7 @@
               </ul>
           </div><!-- /navbar -->
           <div class="overlayed-content">
-            <div id="overlay1">
+            <div id="overlay1" class="overlay-form">
               <h1 class="log-image">
                 <img src="img/logo.png">
               </h1>
@@ -75,14 +75,64 @@
               <div class="log-in">
                 <a href="javascript:;" class="social-btn facebook"><span>Conectarse con <i class="findseat-icon-facebook"></span></i></a>
                 <a href="javascript:;" class="social-btn twitter"><span>Conectarse con <i class="findseat-icon-twitter"></i></span></a>
-                <a href="javascript:;" class="btn red">Login</a>
+                <a href="#overlay3" data-transition="flip" class="btn red action-btn">Login</a>
                 <div class="bottom-links">
                   <a href="javascript:;">Terminos y Condiciones</a>
                 </div>
               </div>
             </div>
-            <div id="overlay2"></div>
-            <div id="overlay3"></div>
+            <div id="overlay2" class="overlay-form">
+              <a href="#overlay3" class="findseat-icon-back action-btn link"></a>
+              <h1 class="log-image">
+                <img src="img/logo.png">
+              </h1>
+              
+              <div class="signup-form">
+                <form action="">
+                  <div class="text-field clearfix">
+                    <span class="left ui-icon ui-icon-user"></span>
+                    <input type="text" class="left" placeholder="Nombre">
+                  </div>
+                  <div class="text-field clearfix">
+                    <span class="left ui-icon ui-icon-mail"></span>
+                    <input type="email" class="left" placeholder="Mail">
+                  </div>
+                  <div class="text-field clearfix">
+                    <span class="left ui-icon ui-icon-key"></span>
+                    <input type="password" class="left" placeholder="Password">
+                  </div>
+                  <div class="text-field clearfix">
+                    <span class="left ui-icon ui-icon-retype"></span>
+                    <input type="password" class="left" placeholder="Confirmar Password">
+                  </div>
+                  <input type="submit" value="conectarse" class="btn red" data-theme="red">
+                </form>
+                
+              </div>
+            </div>
+            <div id="overlay3" class="overlay-form">
+              <a href="#overlay1" class="findseat-icon-back action-btn link"></a>
+              <h1 class="log-image">
+                <img src="img/logo.png">
+              </h1>
+              
+              <div class="signup-form">
+                <form action="">
+                  <div class="text-field clearfix">
+                    <span class="left ui-icon ui-icon-mail"></span>
+                    <input type="email" class="left" placeholder="Mail">
+                  </div>
+                  <div class="text-field clearfix">
+                    <span class="left ui-icon ui-icon-key"></span>
+                    <input type="password" class="left" placeholder="Password">
+                  </div>
+                  <input type="submit" value="conectarse" class="btn red" data-theme="red">
+                </form>
+                <div class="bottom-links">
+                  <a href="javascript:;">Olvidaste tu contraseña</a> <span>|</span><a href="#overlay2" class="action-btn">Deseas registrarte?</a>
+                </div>
+              </div>
+            </div>
           </div> <!-- overlay content end -->
         </div>
 
