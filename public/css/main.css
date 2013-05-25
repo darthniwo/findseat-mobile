@@ -148,7 +148,8 @@ body.landing{
 #dashboard .ui-header.closed{top:-55px;}
 /*#dashboard .ui-content.closed{top:0px;}*/
 
-.tab_content{padding-top:44px;}
+.tab_content{padding-top:0px;}
+.tab_content > ul{margin-top:0 !important;}
 .show.tab_content.cines{padding-top:0;}
 /*#dashboard .arrow_box.unswipe{top:-59px;} */ /*before swipedown*/
 
@@ -170,7 +171,7 @@ body.landing{
   height:51px !important;
   text-align: center;
   position: relative;
-  width: 20%; 
+  width: 20% !important; 
   z-index: 10000;
 }
 
@@ -183,6 +184,7 @@ body.landing{
   width: 30px;
   position: relative;
   top:6px;
+  margin:0 auto;
 }
 
 #menu-trigger.panel-open i{
@@ -452,7 +454,7 @@ ul.ui-listview li span.rating{
   box-shadow: 0px 1px #ccc;
   border-bottom: solid #FFF 1px;
   height: 60px;
-  position: fixed;
+  /*position: fixed;*/
   width: 100%;
   top:0px;
   z-index: 10;
