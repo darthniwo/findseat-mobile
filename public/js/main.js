@@ -39,6 +39,10 @@ $(function(){
 	  	});
 	  }
 
+	  $('#tab-holder').on('swiperight', function(){
+	  	$('#menu-trigger').trigger('tap');
+	  });
+
 	  $('#menu').on('panelopen', function(){
 	  	$('#menu-trigger').addClass('panel-open');
 	  	console.log('panel-open');
