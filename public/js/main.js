@@ -79,8 +79,13 @@ $(function(){
 	  if($('.overlayed-content').length > 0){
 	  	console.log('height: ' + $(window).height());
 	  	console.log('width: ' + $(window).width());
-	  	$('.overlayed-content').css('height', $(window).height());
+	  	$('.overlayed-content').css('height', $(window).height()+1);
 	  	$('.overlayed-content').css('width', $(window).width());
+	  	if( $(window).height() < $(window).width()){
+		  	$('html').addClass('landscape');
+			}else{
+			  $('html').removeClass('landscape');
+			}
 	  }
 
 	  // $('.badges .show-badges').on('tap', function(){
@@ -115,7 +120,7 @@ $(function(){
 	  	// }
 
 	  	if($('.overlayed-content').length > 0){
-		  	console.log('height: ' + $(window).height());
+		  	console.log('height: ' + $(window).height()+1);
 		  	console.log('width: ' + $(window).width());
 		  	console.log('resized');
 		  	$('.overlayed-content').css('height', $(window).height() + 1);
