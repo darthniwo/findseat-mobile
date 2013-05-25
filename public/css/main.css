@@ -99,16 +99,11 @@ body.landing{
 .log-in a span{font-size: 12px;}
 
 .bottom-links{
-  text-align: center;
+  bottom: 0;
   line-height: 2.6;
-  /*background-color:rgba(255,255,255,0.07);*/
-  -weblit-box-shadow:0px 0px 0px 2px rgba(255,255,255,0.07);
-  -moz-box-shadow:0px 0px 0px 2px rgba(255,255,255,0.07);
-  box-shadow:0px 0px 0px 2px rgba(255,255,255,0.07);
-  border-radius:3px;
-  margin:0 auto 18px;
-  height:46px;
-  width:90%;
+  position: absolute;
+  text-align: center;
+  width: 100%;
 }
 
 .bottom-links a{
@@ -589,7 +584,7 @@ ul.ui-listview li span.rating{
   width: 100%;
   z-index: 10;
   border-bottom: 1px solid #FFFFFF;
-  box-shadow: 0 1px #CCCCCC, inset -1px 0px 3px 2px rgba(0,0,0,0.15);
+  /*box-shadow: 0 1px #CCCCCC, inset -1px 0px 3px 2px rgba(0,0,0,0.15);*/
 }
 
 .title-header .movie{
@@ -1333,6 +1328,19 @@ div.headline .count i:last-child{margin-left:-8px;}
 .movie-list a.ui-btn{width:auto;}
 
 /*=========================================================================
+  Overlayed Content
+===========================================================================*/
+.overlayed-content{
+  background-color: rgba(0,0,0,0.8);
+  display:block;
+  position: fixed;
+  z-index: 9999;
+  top:0;
+  left:0;
+}
+
+
+/*=========================================================================
   Arrow box
 ===========================================================================*/
 .arrow_box {
@@ -1468,9 +1476,6 @@ li .ui-icon-custom{
   a.ui-btn,
   input.ui-btn{
     color:#FFF;
-    -weblit-box-shadow:0px 0px 0px 4px rgba(255,255,255,0.15);
-    -moz-box-shadow:0px 0px 0px 4px rgba(255,255,255,0.15);
-    box-shadow:0px 0px 0px 4px rgba(255,255,255,0.15);
     border-radius:3px;
     margin:0 auto 18px;
     width:83%;
@@ -1501,6 +1506,47 @@ li .ui-icon-custom{
     text-decoration: none;
     text-shadow: 0 1px #6E7E00;
     width: 95%;
+  }
+
+  .social-btn{
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    display: inline-block;
+    height: 46px;
+    width: 258px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .social-btn span{
+    font-size: 17px !important;
+    font-weight: 600;
+    text-align:center;
+    top:-7px;
+    position: absolute; 
+    width: 100%;
+    left:0;
+  }
+
+  .social-btn i{
+    font-size: 60px;
+    vertical-align: -20px;
+  }
+
+  .social-btn.facebook{
+    background-color:#195392;
+    border: solid #042A5B 1px;
+  }
+  .social-btn.twitter{
+    background-color: #10ABF4;
+    border:solid #18A3E9 1px;
+  }
+
+  .log-in .btn{
+    font-size: 17px !important;
+    font-weight: 600;
+    padding:10px 0;
   }
 
 
