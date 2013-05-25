@@ -118,6 +118,7 @@ body.landing{
 }
 
 #dashboard{background-color: #F1F1F4;overflow-x:hidden;padding-top:61px !important;}
+#dashboard.no-padding{padding-top:0 !important;}
 #dashboard .ui-content{
   padding:0;
   position: relative;
@@ -196,7 +197,6 @@ body.landing{
 .user-menu{margin-top:0;}
 .user-menu.bottom{position: fixed;bottom: 0;}
 .user-menu.no-border li{border:0 none;box-shadow: none;}
-
 .user-menu a{
   color:#FFF;
   display:block;
@@ -225,6 +225,7 @@ body.landing{
 }
 
 .user-menu li.current a{color:#F75946;}
+.user-menu li.unactive a{color:#666;}
 
 .ui-panel-animate.ui-panel-content-fixed-toolbar-position-left.ui-panel-content-fixed-toolbar-open.ui-panel-content-fixed-toolbar-display-reveal, .ui-panel-animate.ui-panel-content-fixed-toolbar-position-left.ui-panel-content-fixed-toolbar-open.ui-panel-content-fixed-toolbar-display-push, .ui-panel-animate.ui-panel-content-wrap-position-left.ui-panel-content-wrap-open.ui-panel-content-wrap-display-reveal, .ui-panel-animate.ui-panel-content-wrap-position-left.ui-panel-content-wrap-open.ui-panel-content-wrap-display-push{
   -webkit-transform: translate3d(16.5em, 0px, 0px);
