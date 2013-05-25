@@ -93,9 +93,9 @@ $(function(){
 				var btn, target;
 				btn = $(this);
 				target = btn.attr('href');
-				$('.overlay-form.active').fadeOut('fast', function(){
+				$('.overlay-form.active').hide(function(){
 					$('.overlay-form.active').removeClass('active');
-					$(target).fadeIn();
+					$(target).show();
 					$(target).addClass('active');
 				});
 			});
