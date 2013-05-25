@@ -113,13 +113,22 @@ $(function(){
 	  	// if($('.tab-container').length > 0){
 	  	// 	$('.tab-container').css('height', $(window).height() - 112);
 	  	// }
+
 	  	if($('.overlayed-content').length > 0){
 		  	console.log('height: ' + $(window).height());
 		  	console.log('width: ' + $(window).width());
 		  	console.log('resized');
-		  	$('.overlayed-content').css('height', $(window).height());
+		  	$('.overlayed-content').css('height', $(window).height() + 1);
 	  		$('.overlayed-content').css('width', $(window).width());
+
 		  }
+
+		  if( $(window).height() < $(window).width()){
+		  	$('html').addClass('landscape');
+		  }else{
+		  	$('html').removeClass('landscape');
+		  }
+
 	  });
 
 	  // var startX, offsetX, els = document.querySelectorAll("li div.ui-btn-inner");
