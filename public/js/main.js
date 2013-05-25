@@ -101,7 +101,7 @@ $(function(){
 			});
 
 			$('#fb').on('tap', function(){
-				$('overlayed-content').hide();
+				$('.overlayed-content').hide();
 			});
 	  
 	  }
