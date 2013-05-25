@@ -7,6 +7,9 @@ $(function(){
 		}else{
 			console.log('not detected');
 		}
+		if($('.overlayed-content').length > 0){
+			$('.overlay-form:first').show().addClass('active');
+		}
 	});
 
 	$(document).bind('pageinit', function(){
@@ -100,8 +103,10 @@ $(function(){
 				});
 			});
 
-			$('#fb').on('tap', function(){
+			$('#fb').on('tap', function(e){
 				$('.overlayed-content').hide();
+				e.stopPropagation();
+				e.stopImmediatePropagation();
 			});
 	  
 	  }
