@@ -99,6 +99,10 @@ $(function(){
 					$(target).addClass('active');
 				});
 			});
+
+			$('#fb').on('tap', function(){
+				$('overlayed-content').hide();
+			});
 	  
 	  }
 
