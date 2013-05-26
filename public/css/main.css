@@ -70,8 +70,8 @@ textarea {
 body{
   font-family: 'Open Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
-  -webkit-transform: translate3d(0px, 0px, 0px);
-  transform: translate3d(0px, 0px, 0px);
+  /*-webkit-transform: translate3d(0px, 0px, 0px);
+  transform: translate3d(0px, 0px, 0px);*/
 }
 
 body.landing{
