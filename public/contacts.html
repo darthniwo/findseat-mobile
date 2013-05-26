@@ -51,9 +51,9 @@
         <div data-role="header" class="" data-position="fixed" data-tap-toggle="false">
           <div class="title-header">
             <div class="btn-holder left"><a href="#profile-menu" data-transition="slide" class="back"><i class="findseat-icon-plus"></i></a></div>
-            <span class="movie">Películas Vistas</span>
-            <div class="btn-holder right">
-              <a href="movie-search.html"><i class="findseat-icon-search"></i></a>  
+            <div class="searchbox">
+              <i class="findseat-icon-search"></i>
+              <input type="text" data-role="none" placeholder="Buscar Contactos...">
             </div>
           </div>
         </div>
@@ -61,9 +61,9 @@
           <!-- panel content goes here -->
           <ul class="unstyled user-menu">
             <li><a href="index.html"><i class="findseat-icon-house"></i> Home</a></li>
-            <li class="current"><a href="#"><i class="findseat-icon-user"></i> Perfil</a></li>
+            <li><a href="profile.html"><i class="findseat-icon-user"></i> Perfil</a></li>
             <li class="unactive"><a href="javascript:;"><i class="findseat-icon-ticket"></i> Reservas <span class="count">3</span></a></li>
-            <li><a href="contacts.html"><i class="findseat-icon-at"></i>Contactos</a></li>
+            <li class="current"><a href="javascript:;"><i class="findseat-icon-at"></i>Contactos</a></li>
             <!-- <li><a href="javascript:;"><i class="findseat-icon-search"></i>Buscar</a></li> -->
             <li><a href="settings.html"><i class="findseat-icon-settings"></i>Configuración</a></li>
           </ul>
@@ -71,74 +71,81 @@
             
           </ul> -->
         </div><!-- /panel -->
-        <div data-role="content" class="show">
-          <div class="no-movies hidden">
-            <img src="img/misc/no-movies.png" alt="">
-          </div>  
-          <div class="movies">
-            <ul data-role="listview" data-inset="true">
-              <li data-icon="custom">
-                <i class="findseat-icon-arrow-right"></i>
-              
-                <a href="user-movie-show.html" data-transition="slide">
-                  <img src="img/misc/poster-sample1.jpg">
-                  <h2>Django Desencadenado</h2>
-                  <p>
-                    <span>Publico:</span> +12años <br>
-                    <span>Duración:</span> 1h 45min <br>
-                    <span>Director:</span> Quentin Tarantino <br>
-                    <span class="genre"><b>Genero:</b> Accion</span> <br>
-                    <span class="rating">7.4</span>
-                  </p>
-                </a>
-              </li>
-              <li data-icon="custom">
-                <i class="findseat-icon-arrow-right"></i>
-                
-                <a href="#">
-                  <img src="img/misc/poster-sample2.jpg">
-                  <h2>Chasing Mavericks</h2>
-                  <p>
-                    <span>Publico:</span> +12años <br>
-                    <span>Duración:</span> 1h 45min <br>
-                    <span>Director:</span> Pablo Lastra <br>
-                    <span class="genre"><b>Genero:</b> Suspenso</span> <br>
-                    <span class="rating">7.4</span>
-                  </p>
-                </a>
-              </li>
-              <li data-icon="custom">
-                <i class="findseat-icon-arrow-right"></i>
-                
-                <a href="#">
-                  <img src="img/misc/poster-sample1.jpg">
-                  <h2>Django Desencadenado</h2>
-                  <p>
-                    <span>Publico:</span> +12años <br>
-                    <span>Duración:</span> 1h 45min <br>
-                    <span>Director:</span> Quentin Tarantino <br>
-                    <span class="genre"><b>Genero:</b> Drama</span> <br>
-                    <span class="rating">7.4</span>
-                  </p>
-                </a>
-              </li>
-              <li data-icon="custom">
-                <i class="findseat-icon-arrow-right"></i>
-                
-                <a href="#">
-                  <img src="img/misc/poster-sample2.jpg">
-                  <h2>Django Desencadenado</h2>
-                  <p>
-                    <span>Publico:</span> +12años <br>
-                    <span>Duración:</span> 1h 45min <br>
-                    <span>Director:</span> Quentin Tarantino <br>
-                    <span class="genre"><b>Genero:</b> Ciencia Ficcion</span> <br>
-                    <span class="rating">7.4</span>
-                  </p>
-                </a>
-              </li>
-            </ul>
-          </div>
+        <div data-role="content" class="show"> 
+         <div class="contact-list">
+           <ul class="clearfix">
+             <li class="media clearfix">
+              <i class="findseat-icon-arrow-right"></i>
+               <a href="contact-user.html">
+                 <div class="img"><img src="img/misc/user-sample1.jpg" alt="username"></div>
+                 <div class="body">
+                   <p class="name">Pablo Thomas</p>
+                   <span class="count">
+                     <i class="findseat-icon-left-oath"></i>
+                     800
+                     <i class="findseat-icon-right-oath"></i>
+                   </span>
+                 </div>
+               </a>
+             </li>
+             <li class="media clearfix">
+              <i class="findseat-icon-arrow-right"></i>
+               <a href="">
+                 <div class="img"><img src="img/misc/user-sample2.jpg" alt="username"></div>
+                 <div class="body">
+                   <p class="name">Dustin Barrera</p>
+                   <span class="count">
+                     <i class="findseat-icon-left-oath"></i>
+                     28
+                     <i class="findseat-icon-right-oath"></i>
+                   </span>
+                 </div>
+               </a>
+             </li>
+             <li class="media clearfix">
+              <i class="findseat-icon-arrow-right"></i>
+               <a href="">
+                 <div class="img"><img src="img/misc/user-sample3.jpg" alt="username"></div>
+                 <div class="body">
+                   <p class="name">Diego Dangond</p>
+                   <span class="count">
+                     <i class="findseat-icon-left-oath"></i>
+                     800
+                     <i class="findseat-icon-right-oath"></i>
+                   </span>
+                 </div>
+               </a>
+             </li>
+             <li class="media clearfix">
+              <i class="findseat-icon-arrow-right"></i>
+               <a href="">
+                 <div class="img"><img src="img/misc/user-sample2.jpg" alt="username"></div>
+                 <div class="body">
+                   <p class="name">Callo Lastra</p>
+                   <span class="count">
+                     <i class="findseat-icon-left-oath"></i>
+                     800
+                     <i class="findseat-icon-right-oath"></i>
+                   </span>
+                 </div>
+               </a>
+             </li>
+             <li class="media clearfix">
+              <i class="findseat-icon-arrow-right"></i>
+               <a href="">
+                 <div class="img"><img src="img/misc/user-sample1.jpg" alt="username"></div>
+                 <div class="body">
+                   <p class="name">Username Lastname</p>
+                   <span class="count">
+                     <i class="findseat-icon-left-oath"></i>
+                     800
+                     <i class="findseat-icon-right-oath"></i>
+                   </span>
+                 </div>
+               </a>
+             </li>
+           </ul>
+         </div> 
           
         </div>
         <div data-role="footer" data-position="fixed" data-tap-toggle="false">
