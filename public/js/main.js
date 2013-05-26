@@ -145,7 +145,11 @@ $(function(){
 	  
 	  }
 
-
+	  $('.movie-list li a').on('tap', function(e){
+	  	$(this).parent().toggleClass('open');
+	  	$(this).parent().find('.action').slideToggle();
+	  	e.stopPropagation();
+	  });
 
 	  // $('.badges .show-badges').on('tap', function(){
 	  // 	console.log('tap tap tap');
