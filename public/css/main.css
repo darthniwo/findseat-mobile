@@ -565,6 +565,18 @@ ul.ui-listview li span.rating{
   position:relative;
   margin:10px auto;
 }
+.show.users ul li{
+  height:80px !important;
+  position: relative;
+}
+
+.show.users ul.ui-listview span.rating{
+  position: absolute;
+  right: 10px;
+  top: 0;
+}
+
+.show .img.large{height:168px;}
 
 .show .img img{width:100%;}
 
@@ -601,17 +613,38 @@ ul.ui-listview li span.rating{
   text-overflow: ellipsis;
   text-shadow: 0 -1px rgba(162, 68, 35, 0.9);
   white-space: nowrap;
-  width: 200px;
+  width: 190px;
 }
 
 ul.show.ui-listview{margin:0;border-top:solid #CCC 1px;border-bottom:solid #FFF 1px;}
 ul.show.ui-listview .ui-btn-text a.ui-link-inherit{padding:8px 10px 8px 0px !important;}
 ul.show.ui-listview li{height:150px;}
 ul.show.ui-listview li .ui-icon-custom{top:86% !important;}
-ul.ui-listview.show .synopsis{
+ul.ui-listview.show .synopsis,
+.synopsis-solo{
   font-weight: normal;
   overflow: visible;
   white-space: normal;
+}
+.synopsis-content{
+  position: relative;
+}
+.synopsis-solo{
+  height: 190px;
+  color:#7F7F7F;
+  font-size:14px;
+  padding: 0.7em 15px; 
+  overflow-y: scroll;
+  overflow-x:hidden; 
+}
+
+.synopsis-content .fade{
+  background:url('../img/backgrounds/fade.png') repeat-x bottom left;
+  background-size:cover; 
+  position: absolute;
+  bottom:0;left:0;
+  height:75px;
+  width: 100%;
 }
 
 ul.slides{background-color:#29313D;}
@@ -874,9 +907,10 @@ ul.unstyled{
   padding:15px 14px;
   text-shadow:0px 1px rgba(255,255,255,0.7);
 }
-#profile{z-index: 999;padding-top:55px;}
+#profile{z-index: 999;padding-top:55px !important;}
 #profile .title-header{border-bottom: 0 none;position: static;}
 #profile,
+#profile .ui-panel-content-wrap,
 #profile .ui-content,
 #profile .ui-footer,
 #profile .ui-navbar.main-navbar li.current{background-color: #2E3746;}
@@ -887,7 +921,7 @@ ul.unstyled{
   margin:0;
   position:relative;
 }
-
+#profile .title-header .movie{width: 190px;}
 #profile .ui-navbar.main-navbar li .ui-btn-inner{padding-bottom:7px;padding-top:10px;}
 
 .ui-navbar.main-navbar li i{
@@ -1270,12 +1304,6 @@ ul.unstyled{
   padding:12px 15px;
 }
 
-.user-movies .ui-header{
-  border-bottom:solid #1C2026 1px;
-  box-shadow: 0px 1px rgba(255,255,255,0.1);
-  height: 58px !important;
-}
-
 .no-movies{
   height: 100px;
   position: absolute;
@@ -1419,6 +1447,8 @@ div.headline .count i:last-child{margin-left:-8px;}
 .overlay-form{
   display:none;
 }
+
+
 
 /*=========================================================================
   Arrow box

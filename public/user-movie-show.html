@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]>    <html class="no-js iem7"> <![endif]-->
+<!--[if (gt IEMobile 7)|!(IEMobile)]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <title>FindSeat</title>
+    <meta name="description" content="">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+
+    <meta name="viewport" content="user-scalable=0, initial-scale=1.0">
+
+    <meta http-equiv="cleartype" content="on">
+
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/touch/apple-touch-icon-144x144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/touch/apple-touch-icon-114x114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/touch/apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="img/touch/apple-touch-icon-57x57-precomposed.png">
+    <link rel="shortcut icon" href="img/touch/apple-touch-icon.png">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="img/touch/apple-touch-icon-144x144-precomposed.png">
+    <meta name="msapplication-TileColor" content="#222222">
+
+
+    <link href="img/startup/startup-retina-4in.png" rel="apple-touch-startup-image" media="(device-height: 568px)">
+    <link href="img/startup/startup-retina.png" rel="apple-touch-startup-image" sizes="640x920" media="(device-height: 480px)">
+    
+
+    <!-- For iOS web apps. Delete if not needed. https://github.com/h5bp/mobile-boilerplate/issues/94 -->
+    
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="">
+    
+
+    <!-- This script prevents links from opening in Mobile Safari. https://gist.github.com/1042026 -->
+
+     <!--<script>(function(a,b,c){if(c in b&&b[c]){var d,e=a.location,f=/^(a|html)$/i;a.addEventListener("click",function(a){d=a.target;while(!f.test(d.nodeName))d=d.parentNode;"href"in d&&(d.href.indexOf("http")||~d.href.indexOf(e.host))&&(a.preventDefault(),e.href=d.href)},!1)}})(document,window.navigator,"standalone")</script>-->
+ 
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/jquery.mobile.structure-1.3.1.css">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/flexslider.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+  </head>
+  <body>
+
+      <div data-role="page" id="dashboard" class="show no-padding">
+        <!-- <div data-role="header" class="arrow_box unswipe" data-position="fixed" data-tap-toggle="false">
+          <div data-role="navbar"  class="main-navbar">
+            <ul>
+                <li class="current"><a href="profile.html" class=""><i class="findseat-icon-user"></i>Perfil</a></li>
+                <li class=""><a href="#" class=""><i class="findseat-icon-ticket"></i>Reservas</a></li>
+                <li class=""><a href="#" class=""><i class="findseat-icon-at"></i>Contactos</a></li>
+                <li class="last"><a href="#" class=""><i class="findseat-icon-search"></i>Buscar</a></li>
+            </ul>
+          </div>
+        </div> -->
+        <div data-role="content" class="show users">
+          <div class="title-header">
+            <div class="btn-holder left"><a href="user-movies.html" data-transition="slide" class="back"><i class="findseat-icon-arrow-left"></i></a></div>
+            <span class="movie">Django desencadenado</span>
+            <div class="btn-holder right btn-dropdown">
+              <a href="javascript:;" class="comments dd-trigger"><i class="findseat-icon-share"></i></a>
+              <div class="dd">
+                <a href="comments.html" data-transition="slide" class="comments"><span>3</span><i class="findseat-icon-bubble"></i></a>
+                <a href="javascript:;" class="twt-share"><i class="findseat-icon-twitter-icon"></i></a>
+                <a href="javascript:;" class="fb-share"><i class="findseat-icon-facebook-icon"></i></a>  
+              </div>
+              
+            </div>
+          </div>
+          <div class="img large">
+            <span></span>
+            <img src="img/misc/movieclip.jpg" alt="movie name">
+          </div>
+          <ul data-role="listview" data-inset="true" class="show">
+            <li data-icon="custom">
+              <p>
+                <span>Publico:</span> +12años <br>
+                <span>Duración:</span> 1h 45min <br>
+                <span>Director:</span> Quentin Tarantino <br>
+                <span class="genre"><b>Genero:</b> Accion</span> <br>
+                <span class="rating">7.4</span>
+              </p>
+            </li>
+          </ul>
+          <div class="synopsis-content">
+            <div class="synopsis-solo">
+              Set in the South two years before the Civil War, DJANGO UNCHAINED stars Academy Award(R)-winner Jamie Foxx as Django, a slave whose brutal history with his former owners lands him face-to-face with German-born bounty hunter Dr. King Schultz (Academy Award(R)-winner Christoph Waltz). Schultz is on the trail of the murderous Brittle brothers, and only Django can lead him to his bounty. The unorthodox Schultz acquires Django with a promise to free him upon the capture of the Brittles--dead or alive.
+            </div>
+            <div class="fade"></div>
+          </div>
+        </div>
+        <!-- <div data-role="footer">
+          
+        </div> -->
+
+      </div>  <!--end page -->
+      
+      <!-- jQuery mobile -->
+      <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+      
+
+      <!--<script src="js/vendor/zepto.min.js"></script>-->
+      <script src="js/vendor/retina.js"></script>
+      <script src="js/vendor/flexslider.js"></script>
+      <script src="js/helper.js"></script>
+      <script src="js/main.js"></script>
+      <script src="js/vendor/jquery.mobile-1.3.1.min.js"></script>
+
+      <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. 
+      <script>
+          var _gaq=[["_setAccount","UA-XXXXX-X"],["_trackPageview"]];
+          (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
+          g.src=("https:"==location.protocol?"//ssl":"//www")+".google-analytics.com/ga.js";
+          s.parentNode.insertBefore(g,s)}(document,"script"));
+      </script>-->
+  </body>
+</html>

@@ -50,22 +50,37 @@
       <div data-role="page" id="profile" class="user-movies">
         <div data-role="header" class="" data-position="fixed" data-tap-toggle="false">
           <div class="title-header">
-            <div class="btn-holder left"><a href="index.html" data-transition="slide" class="back"><i class="findseat-icon-arrow-left"></i></a></div>
+            <div class="btn-holder left"><a href="#profile-menu" data-transition="slide" class="back"><i class="findseat-icon-plus"></i></a></div>
             <span class="movie">Películas Vistas</span>
             <div class="btn-holder right">
               <a href="javascript:;"><i class="findseat-icon-search"></i></a>  
             </div>
+          </div>
         </div>
+        <div data-role="panel" id="profile-menu" data-display="reveal" data-position-fixed="true">
+          <!-- panel content goes here -->
+          <ul class="unstyled user-menu">
+            <li><a href="index.html"><i class="findseat-icon-house"></i> Home</a></li>
+            <li class="current"><a href="#"><i class="findseat-icon-user"></i> Perfil</a></li>
+            <li class="unactive"><a href="javascript:;"><i class="findseat-icon-ticket"></i> Reservas <span class="count">3</span></a></li>
+            <li><a href="javascript:;"><i class="findseat-icon-at"></i>Contactos</a></li>
+            <!-- <li><a href="javascript:;"><i class="findseat-icon-search"></i>Buscar</a></li> -->
+            <li><a href="settings.html"><i class="findseat-icon-settings"></i>Configuración</a></li>
+          </ul>
+          <!-- <ul class="user-menu no-border unstyled bottom">
+            
+          </ul> -->
+        </div><!-- /panel -->
         <div data-role="content" class="show">
-          <div class="no-movies">
+          <div class="no-movies hidden">
             <img src="img/misc/no-movies.png" alt="">
           </div>  
-          <div class="movies hidden">
+          <div class="movies">
             <ul data-role="listview" data-inset="true">
               <li data-icon="custom">
                 <i class="findseat-icon-arrow-right"></i>
-                <span class="trailer"></span>
-                <a href="#" data-transition="slide">
+              
+                <a href="user-movie-show.html" data-transition="slide">
                   <img src="img/misc/poster-sample1.jpg">
                   <h2>Django Desencadenado</h2>
                   <p>
@@ -79,7 +94,7 @@
               </li>
               <li data-icon="custom">
                 <i class="findseat-icon-arrow-right"></i>
-                <span class="trailer"></span>
+                
                 <a href="#">
                   <img src="img/misc/poster-sample2.jpg">
                   <h2>Chasing Mavericks</h2>
@@ -94,7 +109,7 @@
               </li>
               <li data-icon="custom">
                 <i class="findseat-icon-arrow-right"></i>
-                <span class="trailer"></span>
+                
                 <a href="#">
                   <img src="img/misc/poster-sample1.jpg">
                   <h2>Django Desencadenado</h2>
@@ -109,7 +124,7 @@
               </li>
               <li data-icon="custom">
                 <i class="findseat-icon-arrow-right"></i>
-                <span class="trailer"></span>
+                
                 <a href="#">
                   <img src="img/misc/poster-sample2.jpg">
                   <h2>Django Desencadenado</h2>
@@ -127,14 +142,7 @@
           
         </div>
         <div data-role="footer" data-position="fixed" data-tap-toggle="false">
-          <div data-role="navbar"  class="main-navbar">
-            <ul>
-                <li class="current"><a href="#" class=""><i class="findseat-icon-user"></i>Perfil</a></li>
-                <li class=""><a href="#" class=""><i class="findseat-icon-ticket"></i>Reservas</a></li>
-                <li class=""><a href="#" class=""><i class="findseat-icon-at"></i>Contactos</a></li>
-                <li class="last"><a href="#" class=""><i class="findseat-icon-search"></i>Buscar</a></li>
-            </ul>
-          </div>
+          
         </div>
 
       </div>  <!--end page -->
