@@ -867,16 +867,17 @@ ul.unstyled{
 #dashboard.synopsis{background-color: #29313D;}
 
 #synopsis{
-  color:#7F7F7F;
-  background-color: #F1F1F4;
+  color:#FFF;
+  /*background-color: #F1F1F4;*/
   font-size: 12px;
   margin:13px 12px;
   padding:15px 14px;
   text-shadow:0px 1px rgba(255,255,255,0.7);
 }
-#profile{z-index: 999;}
-
+#profile{z-index: 999;padding-top:55px;}
+#profile .title-header{border-bottom: 0 none;position: static;}
 #profile,
+#profile .ui-content,
 #profile .ui-footer,
 #profile .ui-navbar.main-navbar li.current{background-color: #2E3746;}
 #profile .ui-navbar.main-navbar li{
@@ -923,15 +924,14 @@ ul.unstyled{
 
 #profile .ui-navbar.main-navbar{background: transparent;}
 #profile .ui-header{
-  background:url('../img/backgrounds/profile-bg.jpg') no-repeat top center;
-  height:140px;
+ 
 }
 
 #profile .ui-header a{
-  color: rgba(255,255,255,0.8);
+ /* color: rgba(255,255,255,0.8);
   font-size: 22px;
   text-decoration: none;
-  margin:5px;
+  margin:5px;*/
 }
 
 #profile .ui-header a i.findseat-icon-settings:after{
@@ -958,7 +958,6 @@ ul.unstyled{
   margin: 0 auto;
   overflow: hidden;
   position: relative;
-  top: 20px;
   width: 160px;
 }
 
@@ -995,13 +994,10 @@ ul.unstyled{
   color:#FFF;
   font-size: 22px;
   font-weight: 600;
-  margin-top:35px;
   margin-bottom: 2px;
   text-align: center;
   text-shadow:0px 1px rgba(0,0,0,0.15);
 }
-
-
 
 #profile span.city{
   color:#FFF;
@@ -1044,8 +1040,8 @@ ul.unstyled{
   margin-right: 20px;
 }
 #profile .views a .count i{position:absolute;top:0px;font-size: 25px;}
-#profile .views a i.tor{right:-10px;}
-#profile .views a i.tol{left:-10px;}
+#profile .views a i.tor{right:-15px;}
+#profile .views a i.tol{left:-15px;}
 #profile .views i.right{margin-top:2px;}
 
 .profile-feed .social-network{margin-bottom: 10px;}
@@ -1278,10 +1274,6 @@ ul.unstyled{
   border-bottom:solid #1C2026 1px;
   box-shadow: 0px 1px rgba(255,255,255,0.1);
   height: 58px !important;
-}
-
-.user-movies .ui-header a{
-  top:10px;
 }
 
 .no-movies{

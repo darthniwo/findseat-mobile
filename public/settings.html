@@ -48,57 +48,71 @@
   <body>
 
       <div data-role="page" id="profile" class="">
-        <form action="">
+      
           <div data-role="header" class="" data-position="fixed" data-tap-toggle="false">
-            <a href="" data-rel="back" data-role="none"><i class="findseat-icon-back"></i></a>
-            <div class="main-pic">
-              <img src="img/misc/profile-pic-sample.jpg" alt="">
-              <div class="file">
-                <span>+</span>
-                <input type="file" data-role="none" class="filechooser">
-              </div>
+            <div class="title-header">
+              <div class="btn-holder left"><a href="#profile-menu" data-transition="slide" class="back"><i class="findseat-icon-plus"></i></a></div>
+              <span class="movie">Configuración</span>
             </div>
-          </div>
-          <div data-role="content" class="settings">
             
-            <fieldset>
-              <label>Ajustes de perfil</label>
-              <div class="fields">
-                <div class="field user"><i class="findseat-icon-user"></i><input placeholder="Nombre" data-role="none" type="text"></div>
-                <div class="field email"><i class="findseat-icon-mail"></i><input placeholder="Email" data-role="none" type="text"></div>
-                <div class="field location"><i class="findseat-icon-earth-badge"></i><input placeholder="Ubicacion" data-role="none" type="text"></div>
-                <div class="field password"><i class="findseat-icon-key"></i><input placeholder="Password" data-role="none" type="password"></div>
-                <div class="field confirm"><i class="findseat-icon-key"></i><input placeholder="Confirmar Password" data-role="none" type="password"></div>
-              </div>
-            </fieldset>
-            <fieldset>
-              <label>Ajustes Red Social</label>
-              <div class="fields">
-                <div class="field facebook">
-                  <i class="findseat-icon-facebook-solo"></i>
-                  <a href="javascript:;" class="connect">Desconectado</a>
-                  <input class="readonly" type="text" data-role="none" value="Desconectado" readonly>
+          </div>
+
+          <div data-role="panel" id="profile-menu" data-display="reveal" data-position-fixed="true">
+            <!-- panel content goes here -->
+            <ul class="unstyled user-menu">
+              <li><a href="index.html"><i class="findseat-icon-house"></i> Home</a></li>
+              <li><a href="profile.html"><i class="findseat-icon-user"></i> Perfil</a></li>
+              <li class="unactive"><a href="javascript:;"><i class="findseat-icon-ticket"></i> Reservas <span class="count">3</span></a></li>
+              <li><a href="javascript:;"><i class="findseat-icon-at"></i>Contactos</a></li>
+              <!-- <li><a href="javascript:;"><i class="findseat-icon-search"></i>Buscar</a></li> -->
+              <li class="current"><a href="settings.html"><i class="findseat-icon-settings"></i>Configuración</a></li>
+            </ul>
+            <!-- <ul class="user-menu no-border unstyled bottom">
+              
+            </ul> -->
+          </div><!-- /panel -->
+
+          <div data-role="content" class="settings">
+            <form action="">
+              <div class="main-pic">
+                <img src="img/misc/profile-pic-sample.jpg" alt="">
+                <div class="file">
+                  <span>+</span>
+                  <input type="file" data-role="none" class="filechooser">
                 </div>
-                <div class="field twitter">
-                  <i class="findseat-icon-twitter-icon"></i>
-                  <a href="javascript:;" class="connect">Desconectado</a>
-                  <input class="readonly" type="text" data-role="none" value="Desconectado" readonly>
-                </div>
               </div>
-            </fieldset>
-            <a href="javascript:;" class="settings-submit red"> Desconectarse</a>
+              <fieldset>
+                <label>Ajustes de perfil</label>
+                <div class="fields">
+                  <div class="field user"><i class="findseat-icon-user"></i><input placeholder="Nombre" data-role="none" type="text"></div>
+                  <div class="field email"><i class="findseat-icon-mail"></i><input placeholder="Email" data-role="none" type="text"></div>
+                  <div class="field location"><i class="findseat-icon-earth-badge"></i><input placeholder="Ubicacion" data-role="none" type="text"></div>
+                  <div class="field password"><i class="findseat-icon-key"></i><input placeholder="Password" data-role="none" type="password"></div>
+                  <div class="field confirm"><i class="findseat-icon-key"></i><input placeholder="Confirmar Password" data-role="none" type="password"></div>
+                </div>
+              </fieldset>
+              <fieldset>
+                <label>Ajustes Red Social</label>
+                <div class="fields">
+                  <div class="field facebook">
+                    <i class="findseat-icon-facebook-solo"></i>
+                    <a href="javascript:;" class="connect">Desconectado</a>
+                    <input class="readonly" type="text" data-role="none" value="Desconectado" readonly>
+                  </div>
+                  <div class="field twitter">
+                    <i class="findseat-icon-twitter-icon"></i>
+                    <a href="javascript:;" class="connect">Desconectado</a>
+                    <input class="readonly" type="text" data-role="none" value="Desconectado" readonly>
+                  </div>
+                </div>
+              </fieldset>
+              <a href="javascript:;" class="settings-submit red"> Desconectarse</a>
+            </form>
           </div>
           <div data-role="footer" data-position="fixed" data-tap-toggle="false">
-            <div data-role="navbar"  class="main-navbar">
-              <ul>
-                  <li class="current"><a href="#" class="" data-icon="user">Perfil</a></li>
-                  <li class=""><a href="#" class="" data-icon="ticket">Mis Peliculas</a></li>
-                  <li class=""><a href="#" class="" data-icon="friends">Contactos</a></li>
-                  <li class="last"><a href="#" class="" data-icon="search">Buscar</a></li>
-              </ul>
-            </div>
+            
           </div>
-        </form>
+       
 
       </div>  <!--end page -->
       

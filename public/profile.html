@@ -48,12 +48,35 @@
   <body>
 
       <div data-role="page" id="profile" class="">
+        
         <div data-role="header" class="" data-position="fixed" data-tap-toggle="false">
-          <a href="" data-rel="back" data-role="none" data-transition="slideup"><i class="findseat-icon-up"></i></a>
-          <a href="settings.html" data-role="none" data-transition="flip"><i class="findseat-icon-settings"></i></a>
-          <div class="main-pic"><img src="img/misc/profile-pic-sample.jpg" alt=""></div>
-        </div>
+          <!-- <a href="" data-rel="back" data-role="none" data-transition="slideup"><i class="findseat-icon-up"></i></a>
+          <a href="settings.html" data-role="none" data-transition="flip"><i class="findseat-icon-settings"></i></a>-->
+          <div class="title-header">
+            <div class="btn-holder left"><a href="#profile-menu" data-transition="slide" class="back"><i class="findseat-icon-plus"></i></a></div>
+            <span class="movie">Perfil</span>
+          </div>
+         
+        </div> 
+
+        <div data-role="panel" id="profile-menu" data-display="reveal" data-position-fixed="true">
+          <!-- panel content goes here -->
+          <ul class="unstyled user-menu">
+            <li><a href="index.html"><i class="findseat-icon-house"></i> Home</a></li>
+            <li class="current"><a href="#"><i class="findseat-icon-user"></i> Perfil</a></li>
+            <li class="unactive"><a href="javascript:;"><i class="findseat-icon-ticket"></i> Reservas <span class="count">3</span></a></li>
+            <li><a href="javascript:;"><i class="findseat-icon-at"></i>Contactos</a></li>
+            <!-- <li><a href="javascript:;"><i class="findseat-icon-search"></i>Buscar</a></li> -->
+            <li><a href="settings.html"><i class="findseat-icon-settings"></i>Configuración</a></li>
+          </ul>
+          <!-- <ul class="user-menu no-border unstyled bottom">
+            
+          </ul> -->
+        </div><!-- /panel -->
+
         <div data-role="content" class="show">
+          
+          <div class="main-pic"><img src="img/misc/profile-pic-sample.jpg" alt=""></div>
           <h2>Diego Barrera</h2>
           <span class="city">Barranquilla, Colombia</span>
           <ul class="profile-feed">
@@ -159,7 +182,7 @@
            
           </div> -->
         </div>
-        <div data-role="footer" data-position="fixed" data-tap-toggle="false">
+       <!--  <div data-role="footer" data-position="fixed" data-tap-toggle="false">
           <div data-role="navbar"  class="main-navbar">
             <ul>
                 <li class="current"><a href="#" class=""><i class="findseat-icon-user"></i>Perfil</a></li>
@@ -167,8 +190,8 @@
                 <li class=""><a href="#" class=""><i class="findseat-icon-at"></i>Contactos</a></li>
                 <li class="last"><a href="#" class=""><i class="findseat-icon-search"></i>Buscar</a></li>
             </ul>
-          </div>
-        </div>
+          </div> 
+        </div>-->
 
       </div>  <!--end page -->
       
