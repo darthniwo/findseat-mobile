@@ -153,6 +153,8 @@ $(function(){
 	  	e.stopPropagation();
 	  });
 
+	  $('ui-panel-inner').css('height', $(window).height());
+
 	  // $('.badges .show-badges').on('tap', function(){
 	  // 	console.log('tap tap tap');
 	  // 	$('li.social-network').slideToggle();
