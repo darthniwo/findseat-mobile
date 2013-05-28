@@ -154,7 +154,7 @@ $(function(){
 	  });
 
 	  $('.ui-panel-inner').css('height', $(window).height());
-	  console.log('panel: ' + $('.ui-panel-inner').css('height'));
+	  
 	  // $('.badges .show-badges').on('tap', function(){
 	  // 	console.log('tap tap tap');
 	  // 	$('li.social-network').slideToggle();
