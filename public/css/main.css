@@ -179,11 +179,11 @@ body.landing{
 
 #menu-trigger i{
   display: block;
-  font-size: 25px;
+  font-size: 16px;
   height:30px;
   width: 30px;
   position: relative;
-  top:6px;
+  top:12px;
   margin:0 auto;
 }
 
@@ -267,7 +267,7 @@ ul.tabs li a,
 ul.tabs li a .ui-btn-text{
   color: #C6C6C7;
   font-size: 22px;
-  text-shadow: 1px 0 rgba(255, 255, 255, 0.5);
+  
 }
 
 ul.tabs li.active a .ui-btn-text{
@@ -302,7 +302,7 @@ ul.ui-listview li span,
 ul.ui-listview li a{
   color:#7F7F7F;
   font-size: 12px;
-  text-shadow:0px 1px #FFF;
+  
 }
 
 ul.ui-listview li span{font-weight: bold;}
@@ -313,7 +313,7 @@ ul.ui-listview li span.genre{
   display:inline-block;
   font-weight: normal;
   margin-top:5px;
-  text-shadow:0px 1px rgba(0,0,0,0.15);
+  
   padding:3px 20px 6px 5px;
 }
 ul.ui-listview li span.genre b{font-weight: bold;}
@@ -371,7 +371,7 @@ ul.ui-listview li span.rating{
 .ui-navbar.main-navbar .ui-btn-text{
   font-size: 10px;
   font-weight: bold;
-  text-shadow:0px 0px rgba(0,0,0,0.5) !important;
+  
 }
 .main-navbar .ui-icon{
   height:15px !important;
@@ -495,7 +495,7 @@ ul.ui-listview li span.rating{
   font-size: 12px;
   font-weight: normal;
   margin-bottom:3px;
-  text-shadow:none;
+  
 }
 
 .tab_content.cines ul li h2{
@@ -545,7 +545,7 @@ ul.ui-listview li span.rating{
   font-weight: bold;
   margin-top:15px;
   padding:5px 0 8px 0 !important;
-  text-shadow: 0 1px rgba(0, 0, 0, 0.15);
+  
   text-align:center;
   position: relative;
 }
@@ -613,7 +613,7 @@ ul.ui-listview li span.rating{
   overflow: hidden;
   padding: 15px 0;
   text-overflow: ellipsis;
-  text-shadow: 0 -1px rgba(162, 68, 35, 0.9);
+  
   white-space: nowrap;
   width: 190px;
 }
@@ -687,7 +687,6 @@ ul.slides{background-color:#29313D;}
 
 .btn-holder a i{
   color:#FFF;
-  text-shadow:0px -1px rgba(162,68,35,0.9);
   position: absolute;
   left:0;top:20px;right:0;bottom:0;
   margin:auto;
@@ -774,14 +773,12 @@ ul.slides{background-color:#29313D;}
 .ui-popup h2{
   color:#666;
   font-size: 20px;
-  text-shadow:0px 1px #FFF;
 }
 
 #rsvp span,
 .ui-popup span{
   color:#666;
   font-size: 12px;
-  text-shadow:0px 1px #FFF;
 }
 
 #rsvp-screen{
@@ -802,13 +799,13 @@ ul.slides{background-color:#29313D;}
 
 #movie_comments .title-header .btn-holder{border-right:solid 1px #FFF;}
 #movie_comments .title-header .btn-holder a{border-right:solid 1px #E6E6E8;}
-#movie_comments .title-header .btn-holder i{color:#929292;text-shadow:0 -1px #FFF;}
+#movie_comments .title-header .btn-holder i{color:#929292;}
 
 #movie_comments .head-container{border-bottom:solid #FFF 1px;}
 #movie_comments .title-header .movie{
   color:#929292;
   overflow: visible;
-  text-shadow:0 -1px #FFF;
+  
 }
 #movie_comments .title-header .comments{
   position:absolute;
@@ -818,12 +815,11 @@ ul.slides{background-color:#29313D;}
 #movie_comments .title-header .comments i{
   color:#929292;
   font-size: 24px;
-  text-shadow:0 -1px #FFF;
+  
 }
 
 #movie_comments .title-header .comments small{
   color:#FFF;
-  text-shadow:0px -1px rgba(0,0,0,0.5);
   bottom: 0;
   left: 0;
   margin: auto;
@@ -907,7 +903,6 @@ ul.unstyled{
   font-size: 12px;
   margin:13px 12px;
   padding:15px 14px;
-  text-shadow:0px 1px rgba(255,255,255,0.7);
 }
 #profile{z-index: 999;padding-top:55px !important;}
 #profile .title-header{border-bottom: 0 none;position: static;}
@@ -1032,7 +1027,6 @@ ul.unstyled{
   font-weight: 600;
   margin-bottom: 2px;
   text-align: center;
-  text-shadow:0px 1px rgba(0,0,0,0.15);
 }
 
 #profile span.city{
@@ -1041,7 +1035,6 @@ ul.unstyled{
   font-size: 12px;
   margin-bottom: 20px;
   text-align: center;
-  text-shadow:0px 1px rgba(0,0,0,0.15);
 }
 
 #profile ul{list-style:none;padding:0;}
@@ -1154,7 +1147,7 @@ ul.unstyled{
 #profile ul.ui-listview li, 
 #profile ul.ui-listview li span, 
 #profile ul.ui-listview li a{
-  color:#FFF;text-shadow:0px 1px #000;
+  color:#FFF;
 }
 
 #profile ul.ui-listview li i{
@@ -1162,7 +1155,6 @@ ul.unstyled{
   font-size: 12px;
   position: absolute;
   right: 0;
-  text-shadow:0px 1px rgba(255,255,255,0.16);
 }
 
 .ui-header, .ui-footer{z-index: 100;}
@@ -1285,7 +1277,6 @@ ul.unstyled{
   color:#818181;
   font-size: 14px;
   padding:15px;
-  text-shadow:1px 1px #FFF;
   position: relative;
 }
 
@@ -1345,7 +1336,6 @@ ul.unstyled{
   background:transparent;
   color: #929292;
   margin-left: 5px;
-  text-shadow:0px 1px rgba(0,0,0,0.5); 
   width:80%;
 }
 
@@ -1353,28 +1343,23 @@ ul.unstyled{
   color:#929292;
   float:right;
   margin:5px 10px 0 0px;
-  text-shadow:0px 1px rgba(0,0,0,0.5);
 }
 
 
 .searchbox ::-webkit-input-placeholder {
    color: #929292;
-   text-shadow:0px 1px rgba(0,0,0,0.5); 
 }
 
 .searchbox :-moz-placeholder { /* Firefox 18- */
-   color: #929292;
-   text-shadow:0px 1px rgba(0,0,0,0.5);  
+   color: #929292; 
 }
 
 .searchbox ::-moz-placeholder {  /* Firefox 19+ */
    color: #929292;
-   text-shadow:0px 1px rgba(0,0,0,0.5);  
 }
 
 .searchbox :-ms-input-placeholder {  
    color: #929292;
-   text-shadow:0px 1px rgba(0,0,0,0.5);  
 }
 
 div.headline{
@@ -1530,7 +1515,7 @@ div.headline .count i:last-child{margin-left:-8px;}
 ===========================================================================*/
 .overlayed-content{
   background-color: rgba(0,0,0,0.8);
-  display:block;
+  display:none;
   position: fixed;
   z-index: 99999;
   /*top:0;*/
@@ -1564,6 +1549,12 @@ div.headline .count i:last-child{margin-left:-8px;}
   margin-top: 20px;
   width: 60%;
 }*/
+.signup-form .ui-submit{
+  padding:5px 0;
+  font-weight:  bold;
+}
+
+.signup-form .ui-submit .ui-btn-inner{line-height: 1.2;}
 
 .overlayed-content a.action-btn.link{
   color:#FFF;
@@ -1742,7 +1733,6 @@ li .ui-icon-custom{
     padding: 7px 0;
     text-align: center;
     text-decoration: none;
-    text-shadow: 0 1px #6E7E00;
     width: 95%;
   }
 
