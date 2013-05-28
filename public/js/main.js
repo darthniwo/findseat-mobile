@@ -108,8 +108,10 @@ $(function(){
 	  	$('.slider').flexslider({
 	  		itemWidth: 320,
 	  		touch:"true",
-	  		animation:"slide"
-
+	  		animation:"slide",
+	  		controlNav: true,
+        manualControls: ".flex-control-nav li a",
+        controlsContainer: ".slider"
 	  	});
 	  }
 

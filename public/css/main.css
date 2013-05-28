@@ -550,7 +550,7 @@ ul.ui-listview li span.rating{
   font-size: 18px;
   font-weight: bold;
   margin-top:15px;
-  padding:5px 0 8px 0 !important;
+  padding:6px 0 7px 0 !important;
   
   text-align:center;
   position: relative;
@@ -656,7 +656,7 @@ ul.ui-listview.show .synopsis,
 }
 
 ul.slides{background-color:#29313D;}
-.flex-viewport{width: 320px;}
+.flex-viewport{width: 320px;margin-bottom:25px;}
 #cines.show ul{margin:0;}
 #cines.show ul li{
   background-color:#29313D;
@@ -665,6 +665,10 @@ ul.slides{background-color:#29313D;}
   height: 160px;
   width:281px !important;
   margin-right:15px;
+}
+
+.slider{
+  position: relative;
 }
 
 .btn-holder{
@@ -1319,8 +1323,8 @@ ul.unstyled{
 
 .flex-direction-nav{display: none;}
 .flex-control-nav {
-    bottom: 0;
-    position: fixed;
+    bottom: -30px;
+    position: absolute;
     text-align: center;
     width: 100%;
 }
