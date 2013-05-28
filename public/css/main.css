@@ -291,6 +291,12 @@ ul.ui-listview li{
   height:158px;
   padding:12px;
 }
+.show ul.ui-listview.show li{padding:5px 12px;}
+
+#dashboard.theatre-show ul.ui-listview li{height: 165px;}
+#dashboard.theatre-show ul.ui-listview .ui-li-heading{margin-top:-8px !important;}
+#dashboard.theatre-show span.functions{font-weight: 400;}
+.ui-li-thumb, .ui-listview .ui-li-icon{top:3px;}
 
 ul.ui-listview li a.ui-link-inherit{
   padding:0 10px 0 108px !important;
@@ -312,7 +318,7 @@ ul.ui-listview li span.genre{
   color:#FFF;
   display:inline-block;
   font-weight: normal;
-  margin-top:5px;
+  margin:5px 0px 3px 0px;
   
   padding:2px 20px 4px 5px;
 }
@@ -491,8 +497,9 @@ ul.ui-listview li span.rating{
 
 .tab_content.cines ul li{
   /*border-bottom: 1px solid #1C2026;
-  border-top: 1px solid #4C5566;*/
-  height:140px;
+  border-top: 1px solid #4C5566;
+  height:140px;*/
+  height: auto;
   position:relative;
 }
 .tab_content.cines ul li span{
@@ -656,16 +663,19 @@ ul.ui-listview.show .synopsis,
 }
 
 ul.slides{background-color:#29313D;}
-.flex-viewport{width: 320px;margin-bottom:25px;}
+.flex-viewport{width: 320px;margin-bottom:15px;}
 #cines.show ul{margin:0;}
 #cines.show ul li{
   background-color:#29313D;
   border-bottom: 1px solid #1C2026;
   border-top: 1px solid #4C5566;
-  height: 160px;
+  height: auto;
   width:281px !important;
   margin-right:15px;
 }
+
+.flex-control-nav li{margin:0 4px;}
+.flex-control-paging li a{height: 7px;width: 7px;}
 
 .slider{
   position: relative;
